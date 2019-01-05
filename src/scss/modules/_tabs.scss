@@ -1,0 +1,752 @@
+.tabs-container {
+  margin: 5% 0;
+}
+
+.tab-list {
+  background: #b1b1b1;
+
+  p {
+    margin: 0;
+  }
+}
+
+.tabset-contain {
+  text-align: center;
+}
+
+.tabset-home {
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+  background: $home-tab-background-color;
+  border-radius: 4px;
+
+  li {
+    flex-basis: 34%;
+
+    &:not(:first-child) {
+      border-left: solid 1px $home-tab-border-color;
+    }
+  }
+
+  a {
+    padding: 15px 0;
+    display: block;
+    color: $home-tab-text-color;
+    font-weight: 700;
+
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
+
+    &.on,
+    &:hover {
+      background: #fff;
+      color: $home-tab-text-color-hover;
+    }
+  }
+}
+
+.tab-content {
+  display: none;
+  position: relative;
+}
+
+.tabs-container .tab-list #tab-3.tab-content {
+  text-align: left;
+  background-color: #fff;
+  box-shadow: 0 6px 5px #999;
+}
+.tabs-container .tab-list #tab-3.tab-content h2 {
+  font: bold 1.5em;
+  color: $heading-color;
+}
+.close-tab {
+  position: absolute;
+  top: -19px;
+  right: -7px;
+  color: #333;
+}
+.collapse-tab {
+  color: #333;
+  width: 200px;
+  margin: 0 auto 15px auto;
+  padding: 15px;
+  display: none;
+}
+.tabs-container .tabset {
+  list-style: none;
+  margin: 0;
+  padding: 0 5px 15px 24px;
+  overflow: hidden;
+}
+.tabs-container .tabset li {
+  float: left;
+  min-width: 203px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  text-shadow: 0 -1px 0 #999;
+  font-weight: bold;
+  padding: 0 6px 0 0;
+}
+.tabs-container .tabset a {
+  display: block;
+  color: #036741;
+  background: #dfdfdf;
+  text-decoration: none;
+  box-shadow: 0 0 1px #999;
+  padding: 2px 3px 3px;
+  border-radius: 0 0 3px 3px;
+  border-bottom: 1px solid #999;
+  cursor: pointer;
+}
+.tabs-container .tabset a:hover, .tabs-container .tabset .active {
+  padding-top: 3px;
+  border-top: 0;
+}
+.tabs-container .tabset a:hover span, .tabs-container .tabset a.drawings:hover span, .tabs-container .tabset .active span, .tabs-container .tabset .drawings.active span {
+  background-position: 100% -47px;
+}
+.tabs-container .tabset a span {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 27px 0 0;
+  background: url(https://www.palottery.state.pa.us/App_Themes/PALotteryAll/images/arrow-24.png) no-repeat 100% 4px
+}
+.tabs-container .tabset a.drawings {
+  color: #fff;
+  background: #036741;
+  padding: 12px 8px 12px;
+  font-size: 130%;
+  font-weight: normal;
+}
+.tabs-container .tabset a.drawings span {
+  background: url(https://www.palottery.state.pa.us/App_Themes/PALotteryAll/images/arrow-5.png) no-repeat 100% 4px
+}
+
+.add-menu .tab-list {
+  margin: 0 0 20px
+}
+
+.add-menu .tab-list .tab {
+  display: none;
+  width: 960px;
+  text-align: center;
+  background: #008e55;
+  overflow: hidden;
+  padding: 20px 0 0
+}
+
+.add-menu .tabset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 21px;
+  bottom: 0;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: bold;
+  width: 540px
+}
+
+.add-menu .tabset li {
+  float: left;
+  padding: 0 0 0 7px
+}
+
+.add-menu .tabset a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  min-width: 157px;
+  background: #036841;
+  text-decoration: none;
+  box-shadow: 0 0 1px #999;
+  padding: 2px 3px 3px 7px;
+  border-radius: 0 0 3px 3px;
+  border-bottom: 1px solid #787979;
+  cursor: pointer
+}
+
+.add-menu .tabset a:hover, .add-menu .tabset .active {
+  background: #008e55
+}
+
+.add-menu .tabset a:hover span, .add-menu .tabset .active span {
+  background-position: 100% -57px
+}
+
+.add-menu .tabset a span {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px 0 0;
+  background: url(https://www.palottery.state.pa.us/App_Themes/PALotteryAll/images/arrow-10.png) no-repeat 100% 2px
+}
+.tab-section {
+  overflow: hidden;
+  display: none;
+  margin-bottom: 20px
+}
+.container .main-column .tab-section {
+  display: block
+}
+.tab-section .tab-list .tab {
+  overflow: hidden;
+  padding: 0 0 18px
+}
+.tab-section .tab-list, .gamewinnings {
+  background: #dfdfdf;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  margin: 0 1px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2
+}
+.tab-section .tab-list {
+  background: #ccc;
+  border-radius: 0;
+}
+.tab-section .tab-list {
+  padding: 0 5px 0 5px
+}
+.tab-section .result-area {
+  float: right;
+  width: 258px;
+  border: 1px solid #008d53;
+  border-color: #005b35 #008b52 #30aa77;
+  background: $green;
+  box-shadow: 0 1px 0 #00864f inset;
+  border-radius: 17px;
+  padding: 26px 6px 30px;
+  margin: 0 0 0 14px
+}
+.tab-section .result-area .date-bar {
+  color: #fff;
+  overflow: hidden;
+  padding: 0 8px;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: bold
+}
+.tab-section .result-area .date-bar .link {
+  float: right;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px
+}
+.tab-section .result-area .date-bar .date {
+  font-style: normal
+}
+.tab-section .result-area .circle-list {
+  padding: 27px 0 24px
+}
+.tab-section .result-area .circle-list li, .tab-section .result-area-large .circle-list li {
+  width: 42px;
+  line-height: 41px;
+  height: 41px;
+  font-size: 20px;
+  border-radius: 21px;
+  margin: 0 1px 0 0;
+}
+.tab-section .result-area .adv-circle {
+  text-align: center
+}
+.tab-section .result-area .adv-circle .mb-circle, .tab-section .result-area .adv-circle .mp-circle {
+  display: inline-block;
+  vertical-align: top
+}
+.tab-section .result-area .adv-circle .label {
+  display: block;
+  padding: 0 0 2px
+}
+.tab-section .info-area {
+  overflow: hidden;
+  padding: 14px 0 0;
+  color: #007746;
+  text-shadow: 0 1px 0 #f0f0f0
+}
+.tab-section .info-area-text {
+  color: #4d4d4d;
+  padding: 0 10px
+}
+.tab-section .info-area img {
+  display: block;
+  margin: 0 auto 35px
+}
+.tab-section .info-area .date {
+  display: block;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 17px;
+  border-bottom: 1px solid #bdbdbd;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+  font-weight: bold;
+  text-align: center;
+  padding: 0 0 4px
+}
+.tab-section .info-area .share {
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 10px 0 0
+}
+.tab-section .info-area .share .label {
+  padding: 0 3px 0 0
+}
+.tab-section .info-area .share a {
+  display: inline-block;
+  vertical-align: top;
+  width: 16px;
+  height: 16px;
+  margin: 0 0 0 7px;
+  text-indent: -9999px;
+  direction: ltr;
+  overflow: hidden;
+  background: url(https://www.palottery.state.pa.us/App_Themes/PALotteryAll/images/icons.png) no-repeat;
+}
+.tab-section .info-area .share .facebook {
+  background-position: 0 0
+}
+.tab-section .info-area .share .twitter {
+  background-position: 0 -24px
+}
+.tab-section .tab-set {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 2px;
+  overflow: hidden;
+  width: 100%
+}
+.tab-section .tab-set li {
+  float: left;
+  padding: 0 0 0 2px
+}
+.tab-section .tab-set a {
+  display: block;
+  text-align: center;
+  min-width: 128px;
+  font-weight: bold;
+  color: #4d4d4d;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -1px;
+  cursor: pointer;
+  background: #acacac;
+  text-shadow: 0 1px 0 #d7d7d7;
+  border: 1px solid #959595;
+  border-color: #959595 #959595 #d8d8d8;
+  border-width: 0 1px 1px;
+  padding: 8px 2px
+}
+.tab-section .tab-set a span {
+  background: url(https://www.palottery.state.pa.us/App_Themes/PALotteryAll/images/arrow-12.png) no-repeat 100% 4px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 17px 0 0
+}
+.tab-section .tab-set a.active span {
+  background: url(https://www.palottery.state.pa.us/App_Themes/PALotteryAll/images/games-arrow-up.png) no-repeat 100% 4px
+}
+.tab-section .tab-set .active, .tab-section .tab-set a:hover {
+  background: #dfdfdf;
+  text-decoration: none
+}
+.info-container .tabset {
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 12px
+}
+.info-container .tabset li {
+  float: left;
+  margin: 0 1px 0 0
+}
+#page-content .tabset li {
+  margin-bottom: 0
+}
+.info-container .tabset a {
+  display: block;
+  text-align: center;
+  min-width: 207px;
+  padding: 7px 2px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #4d4d4d;
+  text-shadow: 0 1px 1px #fff;
+  background: #acacac;
+  border: 1px solid #9a9a9a;
+  border-width: 1px 1px 0;
+  border-color: #646464 #9a9a9a;
+  box-shadow: 0 1px 0 #949494 inset;
+}
+.info-container .tabset .active, .info-container .tabset a:hover {
+  text-decoration: none;
+  background: #f8f5f5;
+  border-color: #646464 #d7d4d4;
+  box-shadow: 0 1px 0 #d5d2d2 inset;
+}
+.info-container .tab-list {
+  background: #f8f5f5;
+  border: 1px solid #dcdbdb;
+  border-width: 0 1px 1px;
+  border-color: #878787 #dcdbdb;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  margin: 0 1px 3px;
+  padding: 24px 19px;
+  color: #717171;
+  font-size: 14px;
+  line-height: 18px;
+  overflow: hidden
+}
+.container .info-container .tab-list p {
+  margin: 0 0 24px
+}
+.games-info .tabset {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 10px;
+  overflow: hidden
+}
+.games-info .tabset li {
+  float: left;
+  padding: 0 1px 0 0;
+  font-size: 14px;
+  line-height: 16px
+}
+.games-info .tabset a {
+  display: block;
+  background: #acacac;
+  color: #4d4d4d;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #fff;
+  padding: 6px 5px 8px;
+  min-width: 300px;
+  text-align: center;
+  border: 1px solid #646464 #d7d4d4 #d7d4d4;
+  border-bottom: 0;
+}
+.games-info .tabset a:hover, .games-info .tabset .active {
+  background: #f8f5f5;
+  border-top: 1px solid #908e8e;
+  box-shadow: 0 1px 0 #d5d2d2 inset;
+}
+.games-info .tabset a:hover {
+  text-decoration: none
+}
+.games-info .table-area {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.games-info .tab {
+  background: #f8f5f5
+}
+.games-info .tab .bottom-area {
+  background: #fff
+}
+.tab .container {
+  margin: 0 10px 20px 10px;
+  text-align: left
+}
+.tab .container h4 {
+  color: #333;
+  font-size: 18px;
+  margin: 0 0 6px 0;
+  padding: 0
+}
+@media only screen and (max-width:1019px) {
+  .add-menu .tabset {
+    right: 18px
+  }
+
+  .add-menu .tabset a {
+    background: #048251
+  }
+
+  .add-menu .tab-list .tab {
+    width: 750px
+  }
+  .tab-section {
+    display: block
+  }
+  .container .main-column .tab-section {
+    display: none
+  }
+  .tab-section .tab-list {
+    margin: 0 3px 0 5px
+  }
+  .tab-section .tab-set {
+    padding: 0 0 19px 14px
+  }
+  .tab-section .result-area {
+    background: #048251;
+    margin: 0 43px 0 44px
+  }
+  .tab-section .info-area {
+    margin: 0 0 0 30px
+  }
+  .tabs-container .tabset li.alt {
+    display: none
+  }
+  .tabs-container .tabset {
+    padding: 0 5px 40px 5px
+  }
+  .tabs-container .tabset a.drawings {
+    font-size: 110%
+  }
+  .info-container .tabset a {
+    min-width: 130px;
+    padding: 7px
+  }
+  .games-info .tabset a {
+    min-width: 225px;
+    padding: 40px 0;
+    font-size: 20px
+  }
+}
+
+@media only screen and (max-width:767px), screen and (device-width: 320px) {
+  .tabs-container .tabset {
+    position: relative;
+    top: -1px
+  }
+  .close-tab {
+    right: 4px;
+  }
+
+  .tabs-container .tabset {
+    padding: 0 5px 40px 2px
+  }
+  .tabs-container .tabset li {
+    width: 148px;
+    min-width: 6px;
+    margin: 0 2px 0 0;
+    padding: 0
+  }
+  .tabs-container .tabset li a {
+    text-align: left;
+    padding-left: 20px
+  }
+  .tabs-container .tabset li a span {
+    background-size: 20px;
+    background-position: 100% 12px;
+    margin: 0 5px 0 0
+  }
+  .tabs-container .tabset a:hover span, .tabs-container .tabset .active span {
+    background-position: 100% -57px
+  }
+  .tabs-container .tabset a.drawings {
+    font-size: 100%;
+    font-weight: bold
+  }
+
+  .add-menu .tab-list .tab {
+    width: 450px
+  }
+  .tab-section .tab-list {
+    margin: 0
+  }
+  .tab-section .result-area-alt {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    width: 346px;
+    border-radius: 23px;
+    padding: 35px 6px 39px
+  }
+  .tab-section .info-area {
+    margin: 0 0 35px
+  }
+  .tab-section .tab-list {
+    border-radius: 0;
+  }
+  .tab-section .info-area img {
+    margin-bottom: 13px
+  }
+  .tab-section .info-area .date {
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 7px
+  }
+  .tab-section .info-area .share {
+    font-size: 16px;
+    line-height: 32px
+  }
+  .tab-section .info-area .share a {
+    width: 32px;
+    height: 22px;
+    margin-left: 10px
+  }
+  .tab-section .info-area .share .facebook {
+    background-position: -1px -105px
+  }
+  .tab-section .info-area .share .twitter {
+    background-position: 0 -148px
+  }
+  .tab-section .result-area .date-bar {
+    font-size: 19px;
+    line-height: 21px;
+    padding: 0 13px
+  }
+  .tab-section .result-area .circle-list li {
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
+    font-size: 26px;
+    border-radius: 27px;
+    margin-right: 2px
+  }
+  .tab-section .tab-set li {
+    float: none;
+    padding: 0;
+    border-bottom: 1px solid #fff
+  }
+  .tab-section .tab-set li a {
+    text-align: left;
+    font-size: 22px;
+    line-height: 26px;
+    padding: 13px 38px 12px 31px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3) inset;
+  }
+  .tab-section .tab-set li a span {
+    display: block;
+    background-size: 19px
+  }
+    .tab-section .result-area .circle-list {
+    padding: 37px 0 33px
+  }
+  .tab-section .result-area .adv-circle .label {
+    font-size: 25px;
+    line-height: 27px;
+    padding: 0 6px 6px 0
+  }
+
+  .tab-section .tab-list .tab {
+    padding-bottom: 31px
+  }
+  .tab-section .tab-set {
+    padding: 0 0 16px;
+    border-width: 1px 0 0
+  }
+  .info-container .tabset, .info-container .info-section {
+    padding: 0
+  }
+  .info-container .tabset li {
+    float: none
+  }
+  .info-container .tabset a {
+    width: auto;
+    padding: 40px 0;
+    font-size: 20px
+  }
+  .games-info .tabset {
+    padding: 0
+  }
+  .games-info .tabset li {
+    padding: 0;
+    float: none
+  }
+}
+.tab-section .result-area .adv-circle .mp-circle {
+  display: inline-block;
+  vertical-align: top
+}
+#page-content.page-content-games .tabset {
+  clear: both;
+}
+#instant-games-content .info-container .tab-list {
+  background: none;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+#instant-games-content .games-info .tabset li {
+  width: 33%;
+}
+#instant-games-content .games-info .tabset a {
+  min-width: 0;
+}
+@media only screen and (max-width:1019px) {
+  #instant-games-content .games-info .tabset li {
+    width: 32%;
+  }
+  .games-info .tabset a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width:767px) {
+  #instant-games-content .games-info .tabset li {
+    width: 100%;
+  }
+
+  #page-content.page-content-games .tab .col {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+#tab3_daydrawing {
+  float: none;
+  width: 100%;
+}
+#tab3_eveningdrawing {
+  float: none;
+  width: 54%;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+#tab3_cash4life {
+  float: none;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+@media only screen and (max-width: 1019px) {
+  .tabs-container .tab-list #tab-3.tab-content {
+    padding: 0 0 0 0;
+    margin-top: 2%;
+  }
+  #tab3_daydrawing {
+    float: none;
+    width: 100%;
+  }
+  #tab3_eveningdrawing {
+    float: none;
+    margin: 0;
+    width: 100%;
+    margin-top: 4%;
+  }
+  #tab3_cash4life {
+    float: none;
+    width: 100%;
+    margin-top: 4%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .tabs-container .tab-list #tab-3.tab-content {
+    padding: 0;
+    margin-top: 2%;
+  }
+  #tab3_daydrawing {
+    float: none;
+    width: 100%;
+  }
+  #tab3_eveningdrawing {
+    float: none;
+    margin: 0;
+    width: 100%;
+    margin-top: 4%;
+  }
+  #tab3_cash4life {
+    float: none;
+    width: 100%;
+    margin-top: 4%;
+  }
+}

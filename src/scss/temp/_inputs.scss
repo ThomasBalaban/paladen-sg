@@ -1,0 +1,500 @@
+// Top level elements
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border-style: none
+}
+
+input,
+textarea,
+select {
+  vertical-align: middle;
+  color: #000
+}
+
+input[type=text],
+input[type=password],
+input[type=file],
+input[type=submit],
+textarea {
+  appearance: none
+}
+
+input::placeholder {
+  color: #666
+}
+
+// submit and button
+
+input[type=submit]:hover,
+input[type=button]:hover {
+  cursor: pointer
+}
+
+.info-container .retailer-search-form input[type=submit] {
+  float: left;
+  background: $btn-background-color;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 0 0 84px;
+  padding: 0 0 2px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+  height: 44px;
+  width: 159px;
+  text-shadow: 0 1px 1px #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#page-content input[type="submit"],
+.pseudo-form input[type="submit"],
+#vip-login-special input[type="submit"],
+.create-group-form .submit-holder input[type="submit"],
+.join-group-form input[type="submit"],
+.invite-members-form input[type="submit"],
+.enter-numbers-form input[type="submit"],
+.calculator-form input[type="submit"],
+.invite-group-form .submit-holder input[type="submit"],
+.manage-tickets-form input[type="submit"],
+.manage-tickets-form .submit-holder a,
+.manage-group-form .submit-holder input[type="submit"] {
+  background: linear-gradient(to bottom, #e11f26 0, #e01f26 36%, #d21f25 53%, #ae1e23 85%, #a31e22 100%);
+  text-shadow: 0 2px 1px #6a6a6a;
+}
+
+#page-content input[type="submit"],
+.pseudo-form input[type="submit"],
+#vip-login-special input[type="submit"] {
+  font-size: 22px;
+}
+
+.create-group-form .submit-holder input[type="submit"],
+.join-group-form input[type="submit"],
+.invite-members-form input[type="submit"],
+.enter-numbers-form input[type="submit"],
+.calculator-form input[type="submit"] {
+  width: 345px;
+  height: 48px;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  font-size: 24px;
+  border-radius: 4px;
+}
+
+.invite-group-form .submit-holder input[type="submit"] {
+  width: 90px;
+  height: 30px;
+  margin-top: 6px;
+  padding: 0;
+  float: right;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.manage-tickets-form input[type="submit"],
+.manage-tickets-form .submit-holder a {
+  height: 24px;
+  margin: 0;
+  padding: 0 0 3px;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 4px;
+
+  @media only screen and (max-width:940px) {
+    width: 100%;
+    display: block;
+    margin: 0 0 5px
+  }
+}
+
+.manage-group-form .submit-holder input[type="submit"] {
+  width: 124px;
+  height: 24px;
+  display: block;
+  margin: 3px auto 0;
+  padding: 0 0 3px;
+  font-size: 12px;
+}
+
+.manage-group-form .submit-holder input[type="submit"].send {
+  float: right;
+  margin-left: 6px
+}
+
+.calculator-form input[type="submit"] {
+  width: 200px;
+  height: 38px;
+  padding-bottom: 3px;
+  font-size: 18px;
+
+  @media (min-width: 768px) {
+    width: 255px;
+  }
+}
+
+#vip-login-special input[type="submit"] {
+  font-size: 16px;
+  font-weight: normal;
+  padding: 6px 0;
+  text-transform: uppercase;
+  width: 182px
+}
+
+#become-retailer-form input[type='submit'] {
+  background: 0;
+  color: #fff;
+  background-color: $btn-background-color;
+  display: inline-block;
+  padding: 8px 25px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #333;
+  text-transform: uppercase;
+  margin-right: 10px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+}
+#become-retailer-form input[type='submit'] {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  width: 280px
+}
+#become-retailer-form input[type='submit']:hover {
+  background-color: #036841;
+  text-decoration: none
+}
+
+#widget_hasmynumbereverwon input[type='submit'] {
+  color: #333;
+  font-size: 11px;
+  border-radius: 3px;
+  padding: 4px;
+  text-shadow: none;
+  background: linear-gradient(to bottom, #e2e2e2 0, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
+}
+
+#widget_trivia input[type="submit"] {
+  padding: 4px;
+  font-size: 14px
+}
+
+@media only screen and (max-width: 767px),
+screen and (device-width: 320px) {
+  .invite-members-form input[type="submit"] {
+    width: 300px
+  }
+  .enter-numbers-form input[type="submit"] {
+    width: 300px
+  }
+}
+
+.page-content-games input[type="submit"] {
+  border-radius: 0;
+  padding: 10px 60px;
+
+  @media screen and (max-width:767px) {
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 767px),
+screen and (device-width: 320px) {
+  .login-form input[type=submit] {
+    background-color: #d40000;
+    border: 1px solid #900000;
+    margin-top: 4%;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    width: 120px;
+    height: 40px;
+  }
+}
+
+// text, password, number
+
+.info-container .retailer-search-form input[type=text],
+.info-container #become-retailer-form input[type=text] {
+  float: left;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 20px;
+  color: #666;
+  margin: 0;
+  padding: 9px 11px 13px;
+  width: 260px
+}
+
+.info-container .retailer-search-form .zip-code input[type=text] {
+  width: 155px;
+  margin: 0 0 13px
+}
+
+.info-container .retailer-search-form input[type=text]:focus {
+  box-shadow: 0 0 3px #7dcde4;
+}
+
+.pseudo-form input[type="text"],
+#page-content input[type="text"],
+.pseudo-form input[type="number"] {
+  margin: 0;
+  padding: 10px 10px 11px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  box-sizing: border-box;
+  color: #666;
+  font: italic 18px;
+  outline: 0
+}
+
+.select-focus,
+.create-group-form input[type="text"]:focus,
+.create-group-form textarea:focus,
+.join-group-form input[type="text"]:focus,
+.invite-members-form input[type="text"]:focus,
+.enter-numbers-form .row-holder input[type="text"]:focus,
+.calculator-form input[type="text"]:focus {
+  box-shadow: 0 0 3px #7dcde4;
+}
+
+.create-group-form input[type="text"],
+.create-group-form textarea,
+.join-group-form input[type="text"],
+.invite-members-form input[type="text"],
+.enter-numbers-form .row-holder input[type="text"] {
+  width: 100%;
+  margin: 0;
+  padding: 10px 10px 11px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  float: left;
+  box-sizing: border-box;
+  color: #c2c2c2;
+  font: italic 18px;
+  outline: 0;
+}
+.create-group-form input[type="text"]::placeholder,
+.create-group-form textarea::placeholder,
+.join-group-form input[type="text"]::placeholder,
+.invite-members-form input[type="text"]::placeholder {
+  color: #c2c2c2
+}
+
+.invite-members-form input[type="text"] {
+  width: 78.6%;
+  float: right
+}
+
+.enter-numbers-form .row-holder .box input[type="text"] {
+  width: 63px;
+  margin: 0 10px 0 0;
+  padding: 6px 10px 7px;
+  border-radius: 1px
+}
+.enter-numbers-form .row-holder .box:first-child input[type="text"] {
+  width: 50px
+}
+
+.calculator-form input[type="text"] {
+  width: 133px;
+  margin: 0;
+  padding: 10px 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  float: left;
+  font-size: 14px;
+  color: #4d4d4d;
+}
+.calculator-form input[type="text"].long {
+  width: 217px
+}
+.calculator-form input[type="text"].middle {
+  width: 113px
+}
+
+.calculator-form .row02 input.long[type="text"] {
+  width: 211px
+}
+
+#vip-login-special input[type=text],
+#vip-login-special input[type=password] {
+  color: #666;
+  font-size: 12px;
+  padding: 8px 10px;
+  width: 160px;
+  border: 1px solid #dbdbdb;
+  border-color: #c0c0c0 #d0d0d0 #dbdbdb;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+}
+
+.info-container #become-retailer-form input[type='text'] {
+  display: inline-block;
+  line-height: normal;
+  padding: 10px 10px 11px;
+  width: 260px
+}
+
+#vip-widgets #widget_hasmynumbereverwon input[type='text'] {
+  color: #333;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 11px;
+  border-radius: 0;
+  height: 18px;
+  padding: 2px;
+  width: 20px
+}
+
+@media only screen and (max-width:767px) {
+  .invite-members-form input[type="text"] {
+    width: 100%;
+    float: none;
+    display: block
+  }
+
+  .enter-numbers-form .row-holder .box input[type="text"] {
+    margin-right: 5px
+  }
+  .calculator-form input[type="text"],
+  .calculator-form .row02 input.long[type="text"] {
+    width: 100%;
+    box-sizing: border-box
+  }
+}
+
+.page-content-games #hmnew_entries input[type=text] {
+  color: #333;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+// From temp/_master.scss
+
+@media only screen and (max-width: 767px),
+screen and (device-width: 320px) {
+  .login-form input[type=password],
+  .login-form input[type=text] {
+    float: left;
+    border: 1px solid #bfbfbf;
+    width: 100%;
+    padding: 11px 5px;
+    background: #fff;
+    font-size: 16px;
+  }
+}
+
+
+// checkbox
+
+.invite-group-form input[type="checkbox"],
+.manage-tickets-form input[type="checkbox"],
+.manage-group-form input[type="checkbox"] {
+  width: 13px;
+  height: 13px;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle
+}
+
+.manage-tickets-form input[type="checkbox"] {
+  margin-bottom: 2px
+}
+
+@media only screen and (max-width:767px) {
+  input[type='checkbox'] {
+    appearance: none;
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    padding: 18px
+  }
+  input[type='checkbox']:active,
+  input[type='checkbox']:checked:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 1px 3px rgba(0, 0, 0, 0.1)
+  }
+  input[type='checkbox']:checked {
+    background-color: #e9ecee;
+    border: 1px solid #adb8c0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+    color: #99a1a7
+  }
+  input[type='checkbox']:checked::after {
+    content: '\2714';
+    font-size: 28px;
+    position: absolute;
+    top: 0;
+    left: 6px;
+    color: #99a1a7;
+  }
+
+}
+
+// radio
+
+.calculator-form .radio-holder input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+  float: left
+}
+
+@media only screen and (max-width:767px) {
+  input[type='radio'] {
+    appearance: none;
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 16px;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative
+  }
+  input[type='radio']:checked::after {
+    content: ' ';
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    position: absolute;
+    top: 4px;
+    background: #99a1a7;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 0;
+    left: 4px;
+    font-size: 32px
+  }
+  input[type='radio']:checked {
+    background-color: #e9ecee;
+    color: #99a1a7;
+    border: 1px solid #adb8c0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.1)
+  }
+  input[type='radio']:active,
+  input[type='radio']:checked:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 1px 3px rgba(0, 0, 0, 0.1)
+  }
+}

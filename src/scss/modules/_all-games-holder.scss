@@ -1,0 +1,92 @@
+.all-games-holder {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  z-index: 2000;
+  font-size: 0;
+  line-height: 0;
+  width: 620px;
+
+  @media (min-width: 768px) {
+    top: -1px;
+    right: 2px;
+  }
+
+  .opener {
+    position: absolute;
+    right: 10px;
+    top: 100%;
+    color: #fff;
+    text-align: center;
+    min-width: 123px;
+    background: #036841;
+    text-decoration: none;
+    box-shadow: 0 0 1px #999;
+    padding: 2px 3px 3px 7px;
+    border-radius: 0 0 3px 3px;
+    border-bottom: 1px solid #787979;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: bold;
+
+    @media only screen and (max-width:767px) {
+      margin-right: 6px;
+      display: block;
+      float: right;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 6px 2px 7px 2px;
+      border-radius: 0 0 6px 6px;
+      min-width: 173px;
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: top;
+      padding-right: 20px;
+      background: url(https://www.palottery.state.pa.us/App_Themes/PALotteryAll/images/arrow-10.png) no-repeat 100% 2px;
+
+      @media only screen and (max-width:767px) {
+        background-position: 100% 5px;
+      }
+    }
+  }
+
+  .opener:hover,
+  &.expanded .opener {
+    background: #008e55;
+
+    span {
+      background-position: 100% -57px;
+    }
+  }
+
+  .slider {
+    background: #048251;
+    width: 620px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    padding: 22px 0 0;
+    position: relative;
+    right: 0;
+    top: 0;
+    float: left;
+    font-size: 14px;
+    line-height: 17px;
+
+    @media (min-width: 1020px) {
+      background: #008e55;
+    }
+  }
+}
+
+@media only screen and (max-width:1019px) {
+  .all-games-holder,
+  .all-games-holder .opener {
+    right: 0;
+    background: #048251;
+    z-index: 2;
+    box-shadow: none;
+  }
+}

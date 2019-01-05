@@ -1,0 +1,52 @@
+.info-section-alt .bottom-area {
+  padding: 0 10px 30px;
+}
+.bottom-area {
+  overflow: hidden;
+  padding: 11px 1px 30px;
+}
+
+.bottom-area .pagination {
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 4px 0 0;
+}
+
+.bottom-area .pagination ul {
+  font-weight: normal;
+}
+
+.bottom-area .pagination .inactive,
+.bottom-area .pagination a:hover,
+.bottom-area .pagination .active a {
+  color: #686868;
+  text-decoration: none;
+}
+
+.bottom-area .pagination .active a {
+  font-weight: bold;
+}
+.bottom-area .pagination .paginate_button {
+  font-weight: normal;
+  margin: 0 2px;
+}
+.bottom-area .pagination .paginate_button:hover {
+  cursor: pointer;
+}
+.bottom-area .pagination .paginate_button_disabled,
+.bottom-area .pagination .paginate_active {
+  color: #686868;
+  text-decoration: none;
+}
+
+@media only screen and (max-width:767px), screen and (device-width: 320px) {
+  .bottom-area {
+    position: relative;
+  }
+
+  .paginate_button,
+  .paginate_active
+  .paginate_button_disabled {
+    display: none;
+  }
+}

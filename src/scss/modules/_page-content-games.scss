@@ -1,0 +1,191 @@
+#hmnew_entries { // would prefer not to use a id, but the component is built with it
+  border-bottom: 1px solid #e9e5e6;
+  padding-bottom: 30px;
+
+  .col {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.page-content-games {
+  p {
+    line-height: 1.5;
+
+    @media (max-width:767px) {
+      padding: 0 20px;
+      line-height: 1.5;
+    }
+  }
+
+  h2, h3 {
+    @media (max-width:767px) {
+      padding: 0 20px;
+    }
+  }
+
+  .col {
+    display: inline-block;
+    margin: 20px 0 15px;
+    vertical-align: top;
+    width: 46%;
+
+    @media (max-width: 767px){
+      width: 100%; // Some of these have inline styles that will need to be hand removed
+    }
+  }
+
+  .circle-list {
+    padding: 27px 0 24px
+  }
+}
+
+.result-area {
+  width: 258px;
+  border: 1px solid #008d53;
+  border-color: #005b35 #008b52 #30aa77;
+  background: $green;
+  box-shadow: 0 1px 0 #00864f inset;
+  border-radius: 17px;
+  padding: 0;
+  margin: 0 auto;
+
+  .info-area-text { // Could not find a example of this class
+    color: $dark-gray;
+    padding: 0 10px;
+  }
+
+  @media (max-width:767px) {
+    display: block;
+  }
+}
+
+.info-area {
+  padding: 14px 0 0;
+  color: #007746;
+  text-shadow: 0 1px 0 $light-gray;
+
+  img {
+    display: block;
+    margin: 0 auto 35px;
+  }
+
+  .date {
+    display: block;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.1;
+    font-weight: bold;
+  }
+}
+
+.date-bar {
+  height: 20px;
+
+  .link {
+    float: right;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+.circle-list {
+  list-style: none;
+  margin: 0;
+  padding: 3px 0 5px;
+  text-align: center;
+}
+
+.adv-circle {
+  text-align: center;
+
+  .label {
+    display: inline-block;
+    color: #fff;
+    font-size: 19px;
+    line-height: 1.3;
+    font-weight: bold;
+    padding: 10px 0 2px;
+  }
+}
+
+#howtoplay { // would prefer not to use a id, but the component is built with it
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  h1 { // These should not be h1's
+    @media (max-width:1019px) {
+      margin: 0 auto 27px auto;
+      width: 300px;
+    }
+
+    @media (max-width:767px){
+      width: auto;
+    }
+  }
+
+  h3 {
+    @media (max-width:1019px) {
+      margin-top: 30px;
+    }
+  }
+
+  .col {
+    margin-left: 0;
+
+    @media (max-width:1019px) {
+      display: block;
+      margin: 0 auto; // some of these have inline hardset margins which will need removed
+    }
+  }
+}
+
+.gamepageoptions {
+  li {
+    @media (min-width:767px) {
+      width: 49%;
+    }
+  }
+  @media (max-width:767px) {
+    width: 100%;
+  }
+}
+
+.dailypayoutlink {
+  float: right;
+  font-weight: 700;
+  margin-top: 18px;
+  text-align: right;
+  color: #0c9162;
+  margin: 0 30px 4px 0;
+
+  @media (max-width:767px) {
+    margin: 0 95px 4px 0;
+  }
+}
+
+.alignleft {
+  display: block;
+  float: left;
+  margin: 0 15px 10px 0;
+
+  @media (max-width:767px) {
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+.launchdemo, .launchwatchit {
+  text-align: center;
+}
+
+.match6numbers .result-area {
+  width: 300px;
+}
+
+.jackpot-cols .col {
+  margin: 0 auto;
+  width: 100%;
+}

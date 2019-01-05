@@ -1,0 +1,1024 @@
+/****** HOMEPAGE TEMPLATE EMBEDDED CSS *********/
+
+// From raffle web part
+.slide-show .frame ul li .raffle-message {
+  color: #ec2528;
+  position: absolute;
+  top: 42px;
+  left: 366px;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.slide-show .frame ul li .raffle-message span {
+  color: #fff;
+}
+
+.slide-show .frame ul li.raffle-days .raffle-message {
+  left: 366px;
+}
+
+.slide-show .frame ul li .raffle-app-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 80px;
+}
+
+@media only screen and (max-width:1019px) {
+  .slide-show .frame ul li .raffle-app-link {
+    height: 50px;
+    width: 250px;
+  }
+  .slide-show .frame ul li .raffle-message {
+    top: 32px;
+    left: 278px;
+    font-size: 30px;
+  }
+  .slide-show .frame ul li.raffle-days .raffle-message {
+    left: 278px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .slide-show .frame ul li .raffle-app-link {
+    height: 35px;
+    width: 150px;
+  }
+  .slide-show .frame ul li .raffle-message {
+    top: 22px;
+    left: 172px;
+    font-size: 20px;
+  }
+  .slide-show .frame ul li.raffle-days .raffle-message {
+    left: 172px;
+  }
+}
+
+// From takeover web part
+.takeover-active #smartbanner {
+  display: none;
+}
+
+#Mobile_Coupon_Entry {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  top: 58%;
+  left: 24%;
+  width: 80%;
+  height: 90px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+#Mobile_Coupon_Entry p {
+  width: 90%;
+  max-width: 1021px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*
+* positioning mobile input - Large device
+* ex:iPhone 6 Plus = 414dp
+*/
+
+#Mobile_Coupon_Entry_Mobile {
+  position: absolute;
+  top: 3.35%;
+  text-align: center;
+  color: #fff;
+  height: 140px;
+  font-size: 18px;
+  font-weight: 800;
+  width: 100%;
+}
+
+#Mobile_Coupon_Entry_Mobile p {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header {
+  height: 80px;
+  background: #2b2b2b;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  z-index: 91000;
+}
+
+.header_txt-continue {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 26px;
+}
+
+.header_txt-continue:hover {
+  text-decoration: none;
+}
+
+.mainBody {
+  position: absolute;
+  top: 57px;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.mainBody.pal_takeover {
+  background: rgba(96, 92, 135, 0.87);
+}
+
+.mainBody.pal_takeover2 {
+  background: rgba(232, 180, 23, 0.87);
+}
+
+/*Add padding to the mainBody containing element*/
+/*Adjusting for the embedded video*/
+/*video container*/
+
+.vid-respond {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: 120px auto;
+}
+
+/*yt iframe video*/
+
+.takeover-vid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  width: 560px;
+}
+
+#takeover-container {
+  z-index: 99999;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+}
+
+.closeBtn {
+  display: inline-block;
+  border: 0;
+  max-width: 30px;
+  height: auto;
+  vertical-align: bottom;
+  margin-left: 10px;
+}
+
+.easy {
+  display: block;
+  clear: both;
+  margin: 0 auto;
+}
+
+.takeover-logo {
+  display: inline-block;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.takeover_bg {
+  width: 90%;
+  height: auto;
+  margin: 115px auto 0;
+  position: relative;
+  text-align: center;
+  max-width: 1021px;
+}
+
+.takeover_bg img {
+  width: 100%;
+  height: auto;
+}
+
+.takeover-learn-more {
+  position: absolute;
+  display: block;
+  width: 180px;
+  height: 42px;
+  text-indent: -5000px;
+  direction: ltr;
+  top: 390px;
+  left: 212px;
+}
+
+.takeover-learn-more a,
+.takeover-learn-more a:link {
+  text-decoration: none;
+  color: #fff;
+  font: 18px Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  display: block;
+  margin-top: -2px;
+  text-align: center;
+}
+
+.takeover-continue,
+.takeover-continue:hover {
+  display: block;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #2b2b2b;
+  font-size: 34px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  margin-top: -2px;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1021px;
+  width: 100%;
+  z-index: 1;
+}
+
+.takeover-continue small {
+  color: #d1c2a1;
+  line-height: 36px;
+  text-transform: none;
+  text-decoration: none;
+}
+
+#hprebrandvid {
+  display: block;
+  clear: both;
+  height: 422px;
+  margin: 0 auto;
+  width: 750px;
+}
+
+.takeover-content#leaves {
+  position: absolute;
+  max-width: 289px;
+  width: 100%;
+  height: auto;
+  bottom: -80;
+  right: 40;
+  z-index: 0;
+}
+
+.takeover-content {
+  max-width: 740px;
+}
+
+.takeover-content#pumpkin {
+  position: absolute;
+  max-width: 425px;
+  width: 100%;
+  height: auto;
+  top: -15px;
+  left: 0;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .mainBody {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .mainBody.pal_takeover {
+    background: #2b2b2b;
+  }
+
+  .takeover-content {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    margin: 20px;
+  }
+
+  .BottomClose {
+    display: block;
+  }
+
+  .takeover-continue2,
+  .takeover-continue2:hover {
+    display: block;
+    color: #fff;
+    font: 38px Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    padding-top: 26px;
+    padding-bottom: 20%;
+    margin-top: -1%;
+    background-color: #2b2b2d;
+  }
+
+  .btn-apple-app {
+    position: absolute;
+    height: 50px;
+    width: 50%;
+    left: 0;
+    top: 360px;
+  }
+  .btn-android-app {
+    position: absolute;
+    height: 50px;
+    width: 50%;
+    left: 50%;
+    top: 360px;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  #Mobile_Coupon_Entry {
+    top: 49%;
+    left: 24%;
+    width: 75%;
+  }
+}
+
+/*
+* positioning mobile input - Medium device
+* ex:Nexus 5x-6p, Pixel(all) = 411dp
+*/
+
+@media screen and (max-width:412px) {
+  #Mobile_Coupon_Entry_Mobile {
+    top: 3.85%;
+  }
+}
+
+/*
+  * positioning mobile input - Medium device
+  */
+
+@media screen and (max-width:375px) {
+  #Mobile_Coupon_Entry_Mobile {
+    top: 3.15%;
+  }
+}
+
+@media screen and (max-width:360px) {
+  #Mobile_Coupon_Entry_Mobile {
+    top: 3.4%;
+  }
+}
+
+.takeover_btn-red {
+  /* DB1.17.17- for additional callout btns*/
+  display: inline-block;
+  background-color: #ed1c24;
+  color: #fff;
+  height: auto;
+  min-width: 100px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.icon_chev-r-w {
+  display: inline-block;
+  max-width: 22px;
+  height: auto;
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+
+// From new takeover web part
+#takeoverInsert {
+  box-sizing: border-box
+}
+
+#to-lb {
+  max-width: 450px;
+  top: 96px;
+  height: auto;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-sizing: border-box
+}
+
+#to-lb #to-lb-close-x {
+  background-color: #fff
+}
+
+#to-lb #to-lb-close-x i {
+  color: #333
+}
+
+#to-lb_cta {
+  background: #2b2b2b;
+  padding: 15px 0;
+  position: relative;
+  box-sizing: border-box;
+  vertical-align: middle;
+  z-index: 1
+}
+
+#to-lb_cta a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: bottom;
+  text-transform: uppercase;
+  line-height: 100%
+}
+
+#to-lb_cta a:hover {
+  text-decoration: underline
+}
+
+#to-lb_cta a#to-lb_close:hover {
+  text-decoration: none
+}
+
+#to-lb_wrap {
+  display: block;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  z-index: 999996;
+  background: rgba(0, 0, 0, .7);
+  width: 100%;
+  height: 100%
+}
+
+#to-lb_wrap * {
+  box-sizing: border-box
+}
+
+#to-lb_bg {
+  width: 100%
+}
+
+#to-lb_cta #to-lb-close-x {
+  position: relative
+}
+
+#to-lb-close-x {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+  height: auto;
+  background: 0 0;
+  text-align: center;
+  box-sizing: border-box;
+  width: auto;
+  vertical-align: middle
+}
+
+#to-lb-close-x i {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff
+}
+
+#to-lb-close-x #to-lb_close {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 100%
+}
+
+.to-lb_mobileOnly {
+  display: none
+}
+
+@media (max-width:768px) {
+  #to-lb_cta {
+    background: 0 0;
+    height: 0;
+    padding: 0;
+    text-align: right
+  }
+  #to-lb_cta a {
+    color: transparent
+  }
+  #to-lb_cta #to-lb-close-x {
+    top: 20px;
+    right: 20px;
+    background: #333;
+    border-radius: 50%
+  }
+  video {
+    width: 100%;
+    height: 100%
+  }
+  .to-lb_desktopOnly {
+    display: none
+  }
+  .to-lb_mobileOnly {
+    display: block
+  }
+  .to-lb_mobileOnly#to-lb_bg {
+    min-height: 640px;
+    width: 100%;
+    margin: 0 auto
+  }
+  #to-lb {
+    width: 100%;
+    top: 0;
+    max-width: 100%
+  }
+}
+
+@media (max-width:768px) and (orientation:landscape) {
+  .to-lb_mobileOnly#to-lb_bg {
+    max-height: 75vh
+  }
+}
+
+@media (max-width:768px) and (orientation:landscape) {
+  .to-lb_mobileOnly#to-lb_bg {
+    min-height: 75vh
+  }
+  #to-lb {
+    top: 20px
+  }
+}
+
+div.rebrand {
+  background-color: #86c9f7;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 1% 1% 3% 1%;
+  text-align: center;
+  width: 96%;
+}
+
+div.rebrand h2 {
+  color: #3a3d97;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 2%;
+  padding: 0;
+  text-align: center;
+}
+
+div.rebrand p {
+  color: #000;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  max-width: 530px;
+}
+
+.promo_wrapper {
+  text-align: center;
+  clear: both;
+  width: 100%;
+  float: left;
+  display: block;
+}
+
+.winning_number_promo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 98%;
+}
+
+.winning_number_promo img {
+  width: 100%;
+}
+
+#p_lt_zoneMain_pageplaceholder1_p_lt_zoneWinningNumbers_PaLotteryDrawingGamesCarousel_ListView1_ctrl0_gameLogo,
+#p_lt_zoneMain_pageplaceholder1_p_lt_zoneWinningNumbers_PaLotteryDrawingGamesCarousel_ListView1_ctrl1_gameLogo,
+#p_lt_zoneMain_pageplaceholder1_p_lt_zoneWinningNumbers_PaLotteryDrawingGamesCarousel_ListView1_ctrl2_gameLogo,
+#p_lt_zoneMain_pageplaceholder1_p_lt_zoneWinningNumbers_PaLotteryDrawingGamesCarousel_ListView1_ctrl3_gameLogo,
+#p_lt_zoneMain_pageplaceholder1_p_lt_zoneWinningNumbers_PaLotteryDrawingGamesCarousel_ListView1_ctrl4_gameLogo {
+  width: 207px;
+  height: 64px;
+}
+
+#p_lt_zoneMain_pageplaceholder1_p_lt_zoneWinningNumbers_PaLotteryDrawingGamesCarousel_ListView1_ctrl6_gameLogo {
+  max-height: 64px;
+  width: auto;
+}
+
+.img-respond {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+div.rebrand {
+  background-color: #86c9f7;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 1% 1% 3% 1%;
+  text-align: center;
+  width: 96%;
+}
+
+div.rebrand h2 {
+  color: #3a3d97;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 2%;
+  padding: 0;
+  text-align: center;
+}
+
+div.rebrand p {
+  color: #000;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  max-width: 530px;
+}
+
+.promo_wrapper {
+  text-align: center;
+  clear: both;
+  width: 100%;
+  float: left;
+  display: block;
+}
+
+.winning_number_promo {
+  display: block;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 98%;
+}
+
+.winning_number_promo img {
+  width: 100%;
+}
+
+#p_lt_zoneMain_pageplaceholder1_p_lt_zoneWinningNumbers_PaLotteryDrawingGamesCarousel_ListView1_ctrl0_gameLogo,
+#p_lt_zoneMain_pageplaceholder1_p_lt_zoneWinningNumbers_PaLotteryDrawingGamesCarousel_ListView1_ctrl1_gameLogo,
+#p_lt_zoneMain_pageplaceholder1_p_lt_zoneWinningNumbers_PaLotteryDrawingGamesCarousel_ListView1_ctrl2_gameLogo,
+#p_lt_zoneMain_pageplaceholder1_p_lt_zoneWinningNumbers_PaLotteryDrawingGamesCarousel_ListView1_ctrl3_gameLogo,
+#p_lt_zoneMain_pageplaceholder1_p_lt_zoneWinningNumbers_PaLotteryDrawingGamesCarousel_ListView1_ctrl4_gameLogo {
+  width: 207px;
+  height: 64px;
+}
+
+#p_lt_zoneMain_pageplaceholder1_p_lt_zoneWinningNumbers_PaLotteryDrawingGamesCarousel_ListView1_ctrl6_gameLogo {
+  max-height: 64px;
+  width: auto;
+}
+
+.img-respond {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.event_content.embed_view .event_section_left .event_states {
+  display: none;
+}
+
+/*
+  -- Containd.css --
+  this is the grid framework
+*/
+
+div.callout .row {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.callout .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.callout .col {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding-right: 1%;
+  float: left;
+}
+
+div.callout .fourth {
+  width: 25%;
+}
+
+div.callout .third {
+  width: 33.33%;
+}
+
+div.callout .half {
+  width: 50%;
+}
+
+div.callout .twothirds {
+  width: 66.66%;
+}
+
+div.callout .threefourths {
+  width: 75%;
+}
+
+div.callout .whole {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  div.callout .m-whole {
+    width: 100%;
+  }
+}
+
+/*Utility Classes*/
+
+div.callout .img-respond {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+div.callout .drag-l {
+  float: left;
+}
+
+div.callout .drag-r {
+  float: right;
+}
+
+div.callout .cleard:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.callout .centr {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+
+div.callout .txt-centr {
+  text-align: center;
+}
+
+div.callout .txt-wrapd {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/*
+  -- Callout style
+*/
+
+div.callout {
+  width: 96.5%;
+  padding: 2%;
+  margin: 20px auto;
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+div.callout.pick3 {
+  background: linear-gradient(to right, #e37733 0%, #f5923c 50%, #e37733 100%);
+}
+
+div.callout.cash5 {
+  background: linear-gradient(to right, #ffef02 0%, #fff44e 50%, #ffef02 100%);
+}
+
+div.callout.match6 {
+  background: linear-gradient(to right, #ef5a8b 0%, #ea8ca8 50%, #ef5a8b 100%);
+}
+
+div.callout.mega {
+  background: linear-gradient(to right, #5796d2 0%, #83c3ff 50%, #5796d2 100%);
+}
+
+div.callout.power {
+  background: linear-gradient(to right, #000000 0%, #333333 50%, #000000 100%);
+}
+
+div.callout .co-logos {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  padding-top: 2%;
+  margin-right: 5px;
+}
+
+.co-content {
+  display: inline-block;
+  max-width: 600px;
+  width: 63.25%;
+  margin: 0;
+}
+
+.callout .co-content h3 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  color: #fff;
+  font-size: 1.45em;
+  text-align: left;
+  line-height: 1.15;
+}
+
+.callout .co-content p {
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-align: left;
+  line-height: 1.25;
+}
+
+.callout.pick3 .co-content p {
+  color: #f5e2d9;
+}
+
+.callout.cash5 .co-content p {
+  color: #3a3812;
+}
+
+.callout.cash5 .co-content h3 {
+  color: #000;
+}
+
+.callout.match6 .co-content p {
+  color: #f6eaee;
+}
+
+.callout.mega .co-content p {
+  color: #f2f8fe;
+}
+
+.callout.power .co-content p {
+  color: #ccc;
+}
+
+#logo-wb {
+  width: auto;
+  max-height: 80px;
+  padding-top: 10%;
+  margin: 0 auto;
+  max-width: 50px;
+}
+
+#logo-pick3 {
+  width: auto;
+  max-height: 80px;
+  padding-top: 8%;
+  margin: 0 auto;
+  max-width: 110px;
+}
+
+#logo-cash5 {
+  width: auto;
+  max-height: 80px;
+  padding-top: 10%;
+  margin: 0 auto;
+  max-width: 160px;
+}
+
+#logo-match6 {
+  width: auto;
+  max-height: 80px;
+  padding-left: 30%;
+  margin: 0 auto;
+  max-width: 160px;
+}
+
+#logo-mega {
+  width: auto;
+  max-height: 80px;
+  margin: 0 auto;
+  max-width: 160px;
+}
+
+#logo-power {
+  width: auto;
+  max-height: 80px;
+  padding-top: 10%;
+  margin: 0 auto;
+  max-width: 160px;
+}
+
+.callout iframe.iframe {
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.callout iframe#frame-desk.iframe {
+  height: 80px;
+  display: inline-block;
+}
+
+/* the "mobile" iframe is identical except for its campaign id
+    done for analytic purposes*/
+
+.callout iframe#frame-mob.iframe {
+  /*height: 125px;*/
+  display: none;
+}
+
+/* DB- for use within PALotto envrironment*/
+
+a.btn-red {
+  margin: 22px 20px 22px 0;
+  width: 100px;
+  float: right;
+}
+
+@media (max-width: 800px) {
+  div.callout .co-logos {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .co-content {
+    width: 100%;
+  }
+  .callout .co-content p {
+    text-align: center;
+  }
+  .callout .co-content h3 {
+    text-align: center;
+  }
+  .callout iframe#frame-desk.iframe {
+    display: none;
+  }
+  .callout iframe#frame-mob.iframe {
+    display: inline-block;
+    height: 80px;
+  }
+  #logo-wb {
+    padding-top: 10px;
+  }
+  #logo-pick3 {
+    padding-top: 0;
+  }
+  #logo-cash5 {
+    padding-top: 0;
+  }
+  #logo-match6 {
+    padding-top: 0;
+    padding-left: 0;
+  }
+  #logo-mega {
+    padding-top: 0;
+  }
+  #logo-power {
+    padding-top: 0;
+  }
+  a.btn-red {
+    margin: 22px 10px 22px 0;
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .callout iframe#frame-mob.iframe {
+    height: 110px;
+  }
+}
+
+/****** HOMEPAGE KENTICO PAGE EMBEDDED CSS *********/

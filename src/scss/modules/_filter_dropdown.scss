@@ -1,0 +1,69 @@
+// filter_dropdown
+//
+// PA Lottery Filter DropDown for the Scratch-Off Revamp
+//
+// Markup: ../components/filter_dropdown.html
+//
+// **Requires jcf.js, JSF.select.js** (side note - currently does not, is reusing old JCF)
+//
+// **Requires jcfActivate.js to activate JCF components.** 
+//
+// Style guide: Components.filter_dropdown
+
+#page-content .ag-filter h2 { // ID WILL NEED REMOVED WHEN FONT STYLES ARE MADE GLOBAL - overwriting the #page-content id that overwrites h2 styles. Put this id by itself as its only affecting this one element
+    margin: 0;
+}
+
+.ag-filter { // parent container
+    flex-direction: column;
+
+    h2 { // resetting global styles
+        margin: 0; 
+        padding: 0; 
+        line-height: 1;
+    }
+
+    .filter-icon { // Left over classified as it could apply to other JCF components (same with select-area and select), such as the drop down under winning numbers history on the home page.
+        width: 50%;
+        margin: 10px 0;
+        position: relative;
+
+        .select-area .select-opener { // Overclassified to ensure it overwrites current site styles
+            background: none;
+
+            &::after {
+                right: 2px;
+                top: 6px;
+                position: absolute;
+                content: "\f0b0";
+                font-family: Font Awesome\ 5 Pro;
+                font-weight: 900;
+                font-size: 16px;
+                padding: 6px 12px;
+                color: #000;
+            }
+        }
+
+        @media (min-width: 769px) {
+            width: 35%;
+            margin: 0;
+        }
+    }
+
+    .select-area {
+        width: 100%;
+        background: #fff;
+        margin: 0;
+    }
+    
+    select {
+        width: 100% !important; 
+        background: #fff;
+    }
+
+    @media (min-width: 769px) {
+        flex-direction: row;
+        align-items: center;
+        margin: 10px 0;
+    }
+}

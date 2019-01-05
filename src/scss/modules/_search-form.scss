@@ -1,0 +1,44 @@
+.search-form {
+
+  @media (min-width: 768px) {
+    width: 40%;
+    max-width: 280px;
+  }
+
+  .nav-mobile + & {
+    display: none;
+  }
+
+  .subnav-mobile & {
+    background: $subnav-mobile-background;
+    padding: 0.5rem;
+  }
+
+  .searchBox {
+    display: flex;
+  }
+
+  input {
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    height: 50px;
+
+    &[type="submit"] {
+      padding: 0;
+      direction: ltr;
+      text-indent: -9999px;
+      background: url(/PaLotteryWebSite/media/Misc/search-arrow.gif) no-repeat;
+      width: 40px;
+    }
+
+    &[type="text"] {
+      background: linear-gradient(to right, rgba(248, 248, 248, 1) 0, rgba(252, 252, 252, 1) 26%, rgba(252, 252, 252, 1) 100%);
+      padding: 0 5px 0 10px;
+      color: #999;
+      font-size: 13px;
+      width: 80%;
+      max-width: 240px;
+    }
+  }
+}

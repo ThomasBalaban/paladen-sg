@@ -1,0 +1,310 @@
+.circle-list {
+  padding: 3px 0 5px;
+}
+
+.yellow-circle,
+.red-circle,
+.white-circle,
+.blue-circle,
+.green-circle {
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 28px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: #4d4d4d;
+  line-height: 2;
+  margin: 0 0 0 5px;
+  font-weight: bold;
+}
+
+.blue-circle {
+  background: radial-gradient(ellipse at center, rgba(195, 228, 228, 1) 0%, rgba(195, 228, 228, 1) 16%, rgba(182, 222, 222, 1) 30%, rgba(170, 217, 217, 1) 40%, rgba(139, 203, 203, 1) 52%, rgba(137, 202, 202, 1) 100%);
+}
+
+.red-circle,
+.winning_number_red {
+  color: #fff;
+  background: #ea2a28;
+}
+
+.yellow-circle,
+.winning_number_yellow {
+  background: #ffe53a;
+}
+
+.result-area {
+  .red-circle,
+  .yellow-circle,
+  .white-circle {
+    border-radius: 21px;
+    margin: 0 4px 0 0;
+  }
+
+  .red-circle {
+    background: #c81313;
+    border: 1px solid #c81313;
+  }
+
+  .yellow-circle {
+    border: 1px solid #ffe53a;
+    background: linear-gradient(to bottom, rgba(255, 229, 58, 1) 0, rgba(255, 229, 58, 1) 3%, rgba(254, 227, 52, 1) 3%, rgba(254, 227, 48, 1) 4%, rgba(255, 227, 47, 1) 10%, rgba(255, 225, 39, 1) 10%, rgba(255, 225, 39, 1) 13%, rgba(255, 225, 33, 1) 14%, rgba(255, 224, 35, 1) 16%, rgba(254, 224, 28, 1) 17%, rgba(255, 225, 28, 1) 76%, rgba(252, 222, 26, 1) 77%, rgba(253, 223, 27, 1) 80%, rgba(252, 222, 26, 1) 80%, rgba(248, 218, 22, 1) 81%, rgba(247, 217, 23, 1) 81%, rgba(247, 217, 21, 1) 83%, rgba(247, 217, 25, 1) 84%, rgba(240, 211, 21, 1) 84%, rgba(240, 210, 26, 1) 84%, rgba(240, 211, 23, 1) 85%, rgba(239, 211, 26, 1) 87%, rgba(233, 204, 22, 1) 87%, rgba(235, 206, 26, 1) 88%, rgba(233, 204, 24, 1) 88%, rgba(235, 206, 26, 1) 88%, rgba(234, 205, 25, 1) 90%, rgba(227, 200, 21, 1) 91%, rgba(227, 200, 23, 1) 94%, rgba(228, 201, 26, 1) 94%, rgba(220, 192, 20, 1) 94%, rgba(221, 193, 23, 1) 94%, rgba(217, 193, 23, 1) 96%, rgba(222, 192, 18, 1) 96%, rgba(217, 193, 25, 1) 96%, rgba(216, 193, 25, 1) 96%, rgba(219, 193, 18, 1) 97%, rgba(221, 193, 23, 1) 97%, rgba(217, 193, 22, 1) 97%, rgba(212, 191, 36, 1) 97%, rgba(204, 187, 69, 1) 97%, rgba(199, 184, 83, 1) 97%, rgba(200, 185, 84, 1) 100%);
+  }
+
+  .white-circle {
+    border: 1px solid #fff;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 77%, rgba(252, 252, 252, 1) 78%, rgba(253, 253, 253, 1) 81%, rgba(246, 246, 246, 1) 81%, rgba(245, 245, 245, 1) 84%, rgba(247, 247, 247, 1) 84%, rgba(245, 245, 245, 1) 84%, rgba(246, 246, 246, 1) 84%, rgba(239, 239, 239, 1) 84%, rgba(240, 240, 240, 1) 87%, rgba(232, 232, 232, 1) 88%, rgba(232, 232, 232, 1) 90%, rgba(234, 234, 234, 1) 91%, rgba(232, 232, 232, 1) 91%, rgba(233, 233, 233, 1) 91%, rgba(225, 225, 225, 1) 91%, rgba(225, 225, 225, 1) 94%, rgba(227, 227, 227, 1) 94%, rgba(225, 225, 225, 1) 94%, rgba(226, 226, 226, 1) 94%, rgba(218, 218, 218, 1) 94%, rgba(217, 217, 217, 1) 98%, rgba(219, 219, 219, 1) 98%, rgba(196, 196, 196, 1) 98%, rgba(198, 198, 198, 1) 98%, rgba(197, 197, 197, 1) 100%);
+    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1) inset;
+
+    @media (max-width: 767px) {
+      width: 52px;
+      height: 52px;
+      font-size: 26px;
+      line-height: 2;
+      border-radius: 27px;
+    }
+  }
+}
+
+.circle-list li,
+.winning_number {
+  display: inline-block;
+  border-radius: 28px;
+  width: 40px;
+  background: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4d4d4d;
+  line-height: 2;
+  margin: 0 0 0 5px;
+}
+
+.circle-list .wildball {
+  display: block;
+  margin: 10px auto 0;
+  min-height: 50px;
+  padding: 0;
+  clear: both;
+  background: none;
+  border: none;
+  width: auto;
+
+  img {
+    display: inline-block;
+    margin-top: -3px;
+    margin-right: 8px;
+    width: 50px;
+  }
+
+  span {
+    background: #253089;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 28px;
+    width: 41px;
+    height: 41px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 41px;
+    margin: 0 0 0 -10px;
+  }
+}
+
+#DailyDrawDraws .circle-list li img {
+  width: 53px;
+}
+
+@media screen and (max-width: 767px) {
+  .circle-list li.wildball img,
+  .page-content-games #DailyDrawDraws .circle-list li img {
+    width: 54px;
+  }
+  .circle-list .wildball span {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+  }
+}
+
+.game-list .tooltip {
+  .circle-list {
+    padding: 3px 0 13px;
+    li {
+      margin: 0 4px 0 0;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+      width: 31px;
+      height: 31px;
+    }
+  }
+  .adv-circle span.label {
+    display: inline-block;
+    padding-top: 4px;
+  }
+}
+
+.vip-area {
+  .circle-list {
+    text-align: left;
+    padding: 2px 0 6px 2px;
+    li {
+      text-align: center;
+      width: 25px;
+      height: 25px;
+      margin: 0;
+      line-height: 25px;
+      box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1) inset, 0 0 2px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.grey-box {
+  .circle-list {
+    padding: 22px 21px 8px 3px;
+    li {
+      width: 42px;
+      height: 42px;
+      font-size: 20px;
+      line-height: 42px;
+      margin: 0 0 4px 4px;
+      border-radius: 21px;
+      background: linear-gradient(to bottom, #ececec 0, #fff 3%, #fff 83%, #fcfcfc 85%, #dadada 98%, #c1c1c1 100%);
+    }
+  }
+  .adv-circle {
+    padding-right: 8px;
+  }
+  .result-area .red-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border-radius: 21px;
+    border: 1px solid #d8d6d6;
+  }
+  .adv-circle {
+    .yellow-circle,
+    .white-circle {
+      border-radius: 21px;
+      border: 1px solid #d8d6d6;
+    }
+    .mb-circle {
+      display: inline-block;
+    }
+  }
+}
+
+.dailyNumbers {
+  .circle-list {
+    padding-top: 20px;
+    .wildball {
+      background-position: top left;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px),
+screen and (device-width: 320px) {
+  .blue-circle {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+  }
+  .result-area .red-circle {
+    width: 52px;
+    height: 52px;
+    font-size: 26px;
+    border-radius: 27px;
+  }
+}
+
+.page-content-games {
+  #DailyDrawDraws .circle-list li,
+  #jackpotDraw .circle-list li {
+    background: none;
+    background-image: url(/Custom/uploadedimages/games-assets/bg-ball-white-44.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 44px;
+    height: 38px;
+    font-size: 30px;
+    padding-top: 5px;
+    line-height: normal;
+  }
+  #DailyDrawDraws .circle-list li.wildball span {
+    width: 44px;
+    height: 38px;
+    font-size: 30px;
+    padding-top: 6px;
+    line-height: normal;
+  }
+
+  .result-area {
+    .circle-list {
+      padding: 27px 0 24px;
+      overflow: visible;
+    }
+    .red-circle {
+      background: #c81313;
+      color: #fff;
+      border: 1px solid #c81313;
+      border-radius: 21px;
+      margin: 0 4px 20px 0;
+    }
+    .yellow-circle {
+      color: #4d4d4d;
+      border-radius: 21px;
+      margin: 0 4px 20px 0;
+      border: 1px solid #ffe53a;
+      background: linear-gradient(to bottom, rgba(255, 229, 58, 1) 0, rgba(255, 229, 58, 1) 3%, rgba(254, 227, 52, 1) 3%, rgba(254, 227, 48, 1) 4%, rgba(255, 227, 47, 1) 10%, rgba(255, 225, 39, 1) 10%, rgba(255, 225, 39, 1) 13%, rgba(255, 225, 33, 1) 14%, rgba(255, 224, 35, 1) 16%, rgba(254, 224, 28, 1) 17%, rgba(255, 225, 28, 1) 76%, rgba(252, 222, 26, 1) 77%, rgba(253, 223, 27, 1) 80%, rgba(252, 222, 26, 1) 80%, rgba(248, 218, 22, 1) 81%, rgba(247, 217, 23, 1) 81%, rgba(247, 217, 21, 1) 83%, rgba(247, 217, 25, 1) 84%, rgba(240, 211, 21, 1) 84%, rgba(240, 210, 26, 1) 84%, rgba(240, 211, 23, 1) 85%, rgba(239, 211, 26, 1) 87%, rgba(233, 204, 22, 1) 87%, rgba(235, 206, 26, 1) 88%, rgba(233, 204, 24, 1) 88%, rgba(235, 206, 26, 1) 88%, rgba(234, 205, 25, 1) 90%, rgba(227, 200, 21, 1) 91%, rgba(227, 200, 23, 1) 94%, rgba(228, 201, 26, 1) 94%, rgba(220, 192, 20, 1) 94%, rgba(221, 193, 23, 1) 94%, rgba(217, 193, 23, 1) 96%, rgba(222, 192, 18, 1) 96%, rgba(217, 193, 25, 1) 96%, rgba(216, 193, 25, 1) 96%, rgba(219, 193, 18, 1) 97%, rgba(221, 193, 23, 1) 97%, rgba(217, 193, 22, 1) 97%, rgba(212, 191, 36, 1) 97%, rgba(204, 187, 69, 1) 97%, rgba(199, 184, 83, 1) 97%, rgba(200, 185, 84, 1) 100%);
+    }
+    .white-circle {
+      color: #4d4d4d;
+      border-radius: 21px;
+      margin: 0 4px 0 0;
+      border: 1px solid #fff;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 77%, rgba(252, 252, 252, 1) 78%, rgba(253, 253, 253, 1) 81%, rgba(246, 246, 246, 1) 81%, rgba(245, 245, 245, 1) 84%, rgba(247, 247, 247, 1) 84%, rgba(245, 245, 245, 1) 84%, rgba(246, 246, 246, 1) 84%, rgba(239, 239, 239, 1) 84%, rgba(240, 240, 240, 1) 87%, rgba(232, 232, 232, 1) 88%, rgba(232, 232, 232, 1) 90%, rgba(234, 234, 234, 1) 91%, rgba(232, 232, 232, 1) 91%, rgba(233, 233, 233, 1) 91%, rgba(225, 225, 225, 1) 91%, rgba(225, 225, 225, 1) 94%, rgba(227, 227, 227, 1) 94%, rgba(225, 225, 225, 1) 94%, rgba(226, 226, 226, 1) 94%, rgba(218, 218, 218, 1) 94%, rgba(217, 217, 217, 1) 98%, rgba(219, 219, 219, 1) 98%, rgba(196, 196, 196, 1) 98%, rgba(198, 198, 198, 1) 98%, rgba(197, 197, 197, 1) 100%);
+      box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1) inset;
+    }
+    .adv-circle {
+      text-align: center;
+      .pb-circle {
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+
+    .adv-circle .label {
+      display: inline-block;
+      color: #fff;
+      font-size: 19px;
+      line-height: 23px;
+      font-weight: bold;
+      padding: 10px 0 2px;
+    }
+    .green-circle {
+      background: #2d8068;
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 21px;
+      margin: 0 4px 20px 0;
+    }
+  }
+}
+
+.wildball {
+  display: inline-block;
+  margin-left: 20px;
+
+  img {
+    width: 44px;
+  }
+
+  .winning_number {
+    background: #253089;
+    color: #fff;
+    margin-left: 3px;
+  }
+}

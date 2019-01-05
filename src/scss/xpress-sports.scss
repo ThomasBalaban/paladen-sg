@@ -1,0 +1,209 @@
+@import 'helpers/colors';
+
+@import 'modules/drawing-box';
+@import 'modules/results-holder';
+@import 'modules/buttons';
+@import 'modules/forms';
+
+ul.err {
+  border: none;
+}
+
+#page-content {
+  .results-container {
+    padding-top: 0;
+
+    a {
+      color: #fff;
+    }
+
+    h3 {
+      color: #fff;
+      margin-bottom: 0;
+      font-size: 1.2rem;
+    }
+
+    .green {
+      color: #009c5c;
+    }
+
+    input[type=number] {
+      border-radius: 0.3125rem;
+      border: 1px solid #ccc;
+      background: #fff;
+      font-style: italic;
+      font-size: 18px;
+      line-height: 1.1;
+      padding: 9px 11px 13px;
+    }
+
+    .err {
+      border: none;
+    }
+    input[type=number].err-field {
+      border: 1px solid #ed1c24;
+    }
+  }
+
+  .drawing-box {
+    color: $dark-gray;
+
+    .drawing-header {
+
+      h2 {
+        font-size: 26px;
+
+        @media (max-width: 769px) {
+          font-size: 20px;
+
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .outcome-box {
+      span {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .outcome-box:first-child {
+      @media (max-width: 934px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .xpress-car-racing-drawing {
+    background-color: #fadf30;
+
+    &:nth-child(even) {
+      background-color: #073f7b;
+      color: #fff;
+
+      .drawing-header {
+        h2 {
+          color: #fff;
+        }
+      }
+    }
+
+    .drawing-header {
+      h2 {
+        color: $dark-gray;
+      }
+    }
+
+    .flex > div:not(:first-child) {
+      @media (max-width: 934px) {
+        margin-left: 0;
+      }
+    }
+
+    .outcome-box {
+      margin-bottom: 0;
+
+      span {
+        font-weight: 600;
+      }
+
+      .drawing-value {
+        background: url('/mobileapp/img/source-images/car.png') no-repeat;
+        width: 130px;
+        border-radius: 0;
+      }
+
+      span {
+        @media (max-width: 934px) {
+          margin: .33rem auto;
+        }
+      }
+    }
+  }
+
+  .xpress-football-drawing {
+    background-color: #008732;
+
+    &:nth-child(even) {
+      background-color: $dark-green;
+    }
+
+    .results-box {
+      padding: 1.6rem .5rem;
+
+      @media (max-width: 769px) {
+        flex: 0 1 100%;
+        padding: 1.4rem .5rem;
+      }
+
+      .outcome-box {
+        margin: 0 auto;
+        width: 60%;
+        background: linear-gradient(to top,#a8a8a8 0,#fff 8%);
+
+        @media (max-width: 934px) {
+          width: 100%;
+
+          .drawing-value {
+            font-size: 1.4rem;
+          }
+        }
+
+        span {
+          background: none;
+          padding: .1rem 0;
+          margin: .33rem auto;
+          line-height: 1.5;
+        }
+        .outcome-header {
+          font-size: 20px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+// For app
+.inset-content {
+  .flex {
+    display: flex;
+  }
+
+  .row {
+    flex-flow: row wrap;
+  }
+
+  .around {
+    justify-content: space-around;
+  }
+
+  .drawing-value {
+    width: 2rem;
+  }
+
+  a {
+    font-size: 4.2vw;
+  }
+
+  .stack-labels {
+    section {
+      width: 50%;
+      margin-bottom: 1rem;
+
+      label {
+        text-align: left;
+        display: block;
+      }
+
+      select {
+        width: 80%;
+        float: left;
+      }
+    }
+  }
+}

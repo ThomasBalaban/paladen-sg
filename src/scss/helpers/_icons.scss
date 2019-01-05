@@ -1,0 +1,43 @@
+.fa-chevron-left,
+.fa-chevron-right {
+  color: #333;
+  position: absolute;
+  height: 26px;
+  top: calc(50% - 13px);
+}
+
+.fa-chevron-left {
+  left: -5%;
+
+  @media (min-width: 1020px) {
+    left: -2.7%;
+  }
+}
+
+.fa-chevron-right {
+  right: -5%;
+
+  @media (min-width: 1020px) {
+    right: -2.7%;
+  }
+}
+
+.pager {
+  .fa-chevron-left,
+  .fa-chevron-right {
+    position: static;
+  }
+}
+
+.icon_chev-r-w {
+  display: inline-block;
+  width: 7%;
+  max-width: 22px;
+  height: auto;
+  vertical-align: middle;
+  margin-top: 3px;
+
+  @media (min-width: 413px) {
+    margin-top: 4px;
+  }
+}

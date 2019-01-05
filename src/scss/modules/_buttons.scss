@@ -1,0 +1,296 @@
+.btn {
+  background-color: $btn-background-color;
+  color: $btn-text-color;
+  // padding: 0.5rem 0.9375rem;
+  border-radius: 0.1875rem;
+  font-weight: 600;
+  transition: all linear 150ms;
+
+  &:hover {
+    background-color: $btn-background-color-hover;
+    text-decoration: none;
+    transition: all linear 150ms;
+  }
+}
+
+.btn-vip {
+  position: relative;
+  padding-left: 20px;
+
+  &::before {
+    content: '';
+    background: url(/PaLotteryWebSite/media/Misc/vip-mobile-icon.png) no-repeat;
+    position: absolute;
+    top: -8px;
+    left: -25px;
+    display: inline-block;
+    height: 45px;
+    width: 38px;
+    background-size: contain;
+  }
+}
+
+.btn-inverse {
+  background-color: $btn-text-color;
+  color: $btn-background-color;
+
+  &:hover {
+    color: $btn-text-color;
+  }
+}
+
+.btn-ilottery {
+  text-transform: uppercase;
+
+  &::before {
+    content: '';
+    background: url(/Custom/img/iLottery_logo_RGB.svg);
+    display: inline-block;
+    width: 51px;
+    height: 18px;
+    margin-bottom: -4px;
+  }
+}
+
+input[type="button"] {
+  overflow: hidden;
+  margin: 0;
+  padding: 8px;
+  border-style: none;
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px #757554;
+  text-shadow: 0 2px 1px #6a6a6a;
+  background: linear-gradient(to bottom, #e11f26 0, #e01f26 36%, #d21f25 53%, #ae1e23 85%, #a31e22 100%);
+}
+
+.button_green {
+  background: 0;
+  color: #fff;
+  background-color: $btn-background-color;
+  display: inline-block;
+  padding: 8px 25px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #333;
+  text-transform: uppercase;
+  margin-right: 10px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: #036841;
+    text-decoration: none;
+  }
+}
+
+.btn-red {
+  overflow: hidden;
+  margin: 0 auto 12px auto;
+  padding: 8px;
+  border-style: none;
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  font-weight: normal;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px #757554;
+  text-shadow: 0 2px 1px #6a6a6a;
+  max-width: 254px;
+  text-align: center;
+  background: linear-gradient(to bottom, #e11f26 0, #e01f26 36%, #d21f25 53%, #ae1e23 85%, #a31e22 100%);
+}
+
+.btn-red-small {
+  overflow: hidden;
+  margin: 0 12px 12px 0;
+  padding: 4px 16px;
+  border-style: none;
+  display: inline-block;
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px #757554;
+  text-shadow: 0 2px 1px #6a6a6a;
+  text-align: center;
+  background: linear-gradient(to bottom, #e11f26 0, #e01f26 36%, #d21f25 53%, #ae1e23 85%, #a31e22 100%);
+}
+
+.red-btn {
+  display: inline-block;
+  vertical-align: top;
+  width: 194px;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(237, 38, 35, 1) 0, rgba(234, 39, 37, 1) 5%, rgba(230, 36, 34, 1) 11%, rgba(229, 37, 36, 1) 16%, rgba(226, 37, 35, 1) 16%, rgba(217, 35, 32, 1) 30%, rgba(214, 34, 33, 1) 31%, rgba(213, 35, 33, 1) 36%, rgba(208, 32, 32, 1) 37%, rgba(201, 33, 32, 1) 46%, rgba(196, 30, 30, 1) 48%, rgba(191, 32, 29, 1) 56%, rgba(189, 30, 27, 1) 56%, rgba(183, 31, 30, 1) 61%, rgba(180, 28, 27, 1) 63%, rgba(176, 28, 28, 1) 69%, rgba(172, 28, 27, 1) 70%, rgba(171, 27, 26, 1) 74%, rgba(167, 28, 25, 1) 76%, rgba(169, 27, 25, 1) 78%, rgba(165, 27, 25, 1) 79%, rgba(165, 27, 27, 1) 81%, rgba(162, 26, 26, 1) 81%, rgba(159, 25, 24, 1) 90%, rgba(153, 23, 21, 1) 95%, rgba(152, 24, 23, 1) 100%);
+  border-radius: 6px;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 0 0 0 16px;
+  padding: 7px 0;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.green_gradient_button {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.2;
+  display: inline-block;
+  padding: 5px 20px;
+  margin: 0 0 15px;
+  color: #000;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  border-radius: 7px;
+  border: 1px solid #008f54;
+  background: linear-gradient(to bottom, #c7f7dd 0%, #74bd88 100%);
+}
+
+.page-content-games {
+  .button {
+    border: 1px solid #09a061;
+    color: #fff;
+    font-weight: normal;
+    padding: 6px;
+    text-decoration: none;
+    text-shadow: 0 2px 2px rgba(100, 100, 100, 1);
+    text-transform: uppercase;
+  }
+  .button-small {
+    display: inline-block;
+    font-size: 18px;
+    padding: 8px 36px;
+    text-align: center;
+    background-image: linear-gradient(to top, rgb(8, 159, 96) 33%, rgb(66, 187, 137) 67%, rgb(123, 215, 177) 84%);
+    background-color: #089f60;
+  }
+  .button-middle {
+    margin: 0 auto;
+  }
+}
+
+.vip-area .btn-customize {
+  float: right;
+  background: linear-gradient(to bottom, rgba(225, 31, 39, 1) 0, rgba(225, 31, 39, 1) 36%, rgba(222, 31, 38, 1) 36%, rgba(221, 32, 38, 1) 42%, rgba(218, 31, 38, 1) 43%, rgba(216, 31, 37, 1) 50%, rgba(212, 31, 36, 1) 50%, rgba(209, 32, 38, 1) 56%, rgba(202, 31, 37, 1) 58%, rgba(204, 31, 37, 1) 60%, rgba(200, 31, 34, 1) 62%, rgba(200, 31, 38, 1) 64%, rgba(196, 31, 37, 1) 65%, rgba(197, 32, 38, 1) 68%, rgba(193, 29, 36, 1) 68%, rgba(194, 29, 36, 1) 70%, rgba(187, 30, 37, 1) 72%, rgba(183, 30, 35, 1) 79%, rgba(179, 30, 34, 1) 80%, rgba(174, 29, 36, 1) 89%, rgba(167, 31, 35, 1) 91%, rgba(170, 29, 35, 1) 93%, rgba(166, 30, 34, 1) 94%, rgba(165, 30, 34, 1) 100%);
+  color: #fff;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 2px 0 0;
+  padding: 4px 15px 2px 8px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  span {
+    display: inline-block;
+    vertical-align: top;
+    background: url(https://www.palottery.state.pa.us/App_Themes/PALotteryAll/images/ico-cogwheel.png) no-repeat;
+    padding: 3px 0 3px 30px;
+  }
+  &:hover span {
+    text-decoration: underline;
+  }
+}
+
+.btn-calculator {
+  margin: 0 8px 0 4px;
+  padding: 12px 5px;
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px #757554;
+  text-shadow: 0 2px 1px #6a6a6a;
+  background: linear-gradient(to bottom, #e11f26 0, #e01f26 36%, #d21f25 53%, #ae1e23 85%, #a31e22 100%);
+}
+
+#mia_btn-coupons {
+  display: block;
+  position: absolute;
+  top: 17vw;
+  right: 26vw;
+  background: transparent linear-gradient(to bottom, #E11F26 0, #E01F26 36%, #D21F25 53%, #AE1E23 85%, #A31E22 100%) repeat scroll 0% 0%;
+  padding: 12px;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px #3b3b3b;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+
+  &.btn-custom {
+    background: #25161f;
+    box-shadow: 0 1px 2px #9e2c00;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 412px) {
+    top: 22vw;
+    right: 38vw;
+  }
+
+  @media screen and (max-width: 390px) {
+    top: 19vw;
+    right: 30vw;
+  }
+
+  @media screen and (max-width: 365px) {
+    top: 21vw;
+    right: 36vw;
+  }
+}
+
+// From master
+
+#button {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
+  padding-bottom: 50px;
+}
+
+.btn_blue {
+  background-color: #25408f;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.closeBtn {
+  display: inline-block;
+  border: 0;
+  max-width: 28px;
+  height: auto;
+  vertical-align: bottom;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+  }
+}
+
+.vip-login-special button {
+  background: #003811;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  border-radius: 3px;
+  font-size: 18px;
+  color: #fff;
+  border: 2px solid #003811;
+  font-weight: 700;
+  padding: 1rem 6rem;
+  width: auto;
+}

@@ -1,0 +1,361 @@
+.game-filter-contain {
+  position: relative;
+
+  ul {
+    background: #fff;
+    border: 1px solid #767676;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    height: auto;
+    overflow-y: visible;
+    font-size: 18px;
+    right: 0;
+    width: 300px;
+
+    @media (min-width: 1020px) {
+      height: 216px;
+      overflow-y: scroll;
+    }
+  }
+
+  a {
+    font-weight: normal;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.game-filter-toggle:hover {
+  text-decoration: none;
+}
+
+
+.dataTable th,
+.dataTable td {
+  font-size: 12px;
+}
+
+#mobile_map {
+  display: none;
+}
+
+#leftcontainer {
+  width: 50%;
+  height: 75px;
+}
+
+#prizebox {
+  display: none;
+}
+
+#lefty {
+  width: 90px;
+  height: 35px;
+  margin-left: 0;
+  padding-top: 10px;
+}
+
+#lefty2 {
+  width: 200px;
+  height: 35px;
+  margin-left: 0;
+}
+
+#rightcontainer {
+  display: none;
+  width: 50%;
+  height: 75px;
+  margin-left: 50%;
+}
+
+#righty {
+  width: 100px;
+  height: 35px;
+  margin-left: 20px;
+}
+
+#righty2 {
+  width: 120px;
+  height: 35px;
+  margin-left: 140px;
+}
+
+.vcenter {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#wintotal {
+  padding-left: 0;
+  color: #4d4d4d;
+  font-size: 23px;
+  line-height: normal;
+  text-align: right;
+}
+
+#wintotal span {
+  display: block;
+  font-size: 50%;
+}
+
+#winfy {
+  padding-left: 100px;
+  margin-top: -30px;
+  color: #4d4d4d;
+  font-size: 12px;
+}
+
+#prizebox {
+  margin-left: 80px;
+  margin-top: -62px;
+  border-bottom: 0px;
+  padding-left: 0px;
+}
+
+#amt-prize {
+  padding-left: 97px;
+  margin-top: -5px;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 7px;
+}
+
+.select-area {
+  background: #f8f8f8;
+}
+
+#WinTotName {
+  padding-right: 176px;
+}
+
+@media screen and (max-width: 1019px) {
+  .game-filter-contain ul {
+    font-size: 18px;
+    height: auto;
+    right: 0;
+    width: 300px;
+    overflow-y: visible;
+  }
+
+  #mobile_map {
+    width: 90%;
+    display: block;
+    margin: 0px auto 28px auto;
+  }
+  #WinTotName {
+    padding-right: 128px;
+  }
+  #prizebox {
+    margin-left: 30px;
+    margin-top: -24px;
+    padding-left: 0;
+  }
+  #page-content #wintotal {
+    width: 200px;
+  }
+  #amt-prize {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .game-filter-contain ul {
+    font-size: 18px;
+    height: auto;
+    right: 0;
+    width: 300px;
+    overflow-y: visible;
+  }
+
+  select {
+    font-size: 25px;
+  }
+
+  .select-area {
+    margin: 0;
+  }
+
+  #game-filter-label {
+    display: block;
+  }
+
+  .winners-columns {
+    display: none;
+  }
+
+  #mobile_map {
+    width: 90%;
+    display: block;
+    margin: 0px auto 28px auto;
+  }
+
+  #leftcontainer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  #rightcontainer {
+    border-top: 1px solid #333;
+    width: 100%;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-top: 26px;
+  }
+
+  #leftcage {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #lefty {
+    width: 175px;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+  }
+
+  #lefty2 {
+    width: 200px;
+    height: 35px;
+    margin-left: 0;
+  }
+
+  #rightcage {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #righty {
+    width: 115px;
+    height: 35px;
+  }
+
+  #righty2 {
+    width: 120px;
+    height: 35px;
+  }
+
+  #wintotal {
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #WinTotName {
+    padding-right: 322px;
+  }
+  #winfy {
+    padding-left: 100px;
+    margin-top: -30px;
+    color: #4d4d4d;
+    font-size: 12px;
+  }
+
+  #prizebox {
+    margin-left: 80px;
+    margin-top: -62px;
+    border-bottom: 0px;
+    padding-left: 0px;
+  }
+
+  #amt-prize {
+    padding-left: 97px;
+    margin-top: -5px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .select-area .center {
+    margin-top: -3px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+  }
+
+  .select-area .select-opener {
+    margin-right: 7px;
+    background: url("/App_Themes/PALotteryAll/images/arrow-19.gif") no-repeat scroll 100% 14px transparent;
+  }
+
+  /*  RESPONSIVE  */
+  #win {
+    width: 25%;
+  }
+  #picklist {
+    margin-left: 25%;
+  }
+
+  #County_List {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .respcontainer:after {
+    clear: both;
+  }
+
+  .respcontainer>div {
+    min-height: 100px;
+    width: 50%;
+  }
+
+  .leftblock {
+    background: #f8f5f5;
+  }
+
+  .rightblock {
+    background: #f8f5f5;
+  }
+
+  .leftcontent {
+    margin-left: 20px;
+  }
+
+  .rightcontent {
+    padding-top: 10px;
+    margin-left: 20px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .respcontainer>div {
+    width: 100%;
+  }
+
+  .leftblock {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #County_List {
+    margin-top: 40px;
+  }
+}
+@media all and (max-width: 900px) {
+  #amt-prize {
+    padding-left: 130px;
+  }
+}
+
+.box {
+  padding: 10px;
+  background-color: #eee;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}

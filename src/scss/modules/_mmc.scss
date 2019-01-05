@@ -1,0 +1,68 @@
+.mmc-bg {
+  background: radial-gradient(ellipse at center, rgba(195, 228, 228, 1) 0%, rgba(195, 228, 228, 1) 16%, rgba(182, 222, 222, 1) 30%, rgba(170, 217, 217, 1) 40%, rgba(139, 203, 203, 1) 52%, rgba(137, 202, 202, 1) 100%);
+}
+
+.mmcPaWinnersLink {
+  display: inline-block;
+  color: #333;
+  padding: 8px 12px;
+  background-color: #fff;
+  margin-top: 8px;
+  text-decoration: underline;
+  font-size: 11px;
+}
+
+.mmcMcp {
+  background-color: #fff;
+  color: #333;
+  width: 50%;
+  margin: 12px auto;
+  padding: 2px;
+  font-weight: bold;
+  text-align: left;
+
+  @media (min-width: 768px) {
+    width: 88%;
+  }
+
+  .mmcCountValue,
+  .mmcCountLabel {
+    display: inline-block;
+    padding: 8px;
+  }
+
+  .mmcCountValue {
+    font-size: 20px;
+    border-right: 1px solid #076f44;
+  }
+
+  .mmcCountLabel {
+    font-size: 14px;
+
+    @media (min-width: 768px) {
+      font-size: 15px;
+    }
+  }
+}
+
+.mmcWinning {
+  color: #ffe400;
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 0 5px;
+
+  #jackpotDraw & {
+    color: #007746;
+  }
+}
+
+.mmcWinningCash {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  #jackpotDraw & {
+    color: #007746;
+  }
+}

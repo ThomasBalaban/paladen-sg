@@ -1,0 +1,2324 @@
+@import 'helpers/colors';
+@import 'helpers/typography';
+@import 'helpers/responsiveHelpers.scss';
+@import 'helpers/keyframes.scss';
+@import 'helpers/global';
+@import 'helpers/icons';
+
+.text-game-with {
+  width: 300px;
+  height: 67px;
+  display: block;
+  text-indent: -9999px;
+  direction: ltr;
+  overflow: hidden;
+  background: url(/App_Themes/PALotteryAll/images/text-game-with.png) no-repeat;
+  margin: 0 auto 7px;
+}
+
+.blue-label {
+  display: inline-block;
+  padding: 10px 0 0 5px;
+  text-transform: uppercase;
+}
+
+.helper span strong {
+  font-size: 12px;
+}
+
+.winning_number_green {
+  color: #fff;
+  background: #2D8068;
+  border: 2px solid #fff;
+}
+
+.add-menu {
+  position: absolute;
+  right: 0;
+  padding: 0 23px 0;
+  margin: 0;
+  top: 0;
+  min-height: 20px;
+  z-index: 2001
+}
+
+.container p {
+  margin: 0 0 29px 10px;
+  line-height: 20px;
+}
+.container .holder {
+  overflow: hidden
+}
+.container .main-column {
+  float: left;
+  width: 634px;
+  padding: 9px 15px 0 0
+}
+.gamewinnings {
+  padding: 20px 5px 20px 9px
+}
+
+.text-top-prizes {
+  display: block;
+  text-indent: -9999px;
+  direction: ltr;
+  overflow: hidden;
+  width: 576px;
+  height: 44px;
+  background: url(/App_Themes/PALotteryAll/images/text-top-prizes.png) no-repeat;
+  margin: 0 auto 36px
+}
+
+/* Changed for Active Games */
+
+#page-content #winlist_container h5 {
+  color: #666;
+  font-size: 18px;
+  margin: 20px 0 20px 16px
+}
+.jcf-hidden {
+  display: block;
+  position: absolute;
+  left: -9999px;
+}
+.select-area {
+  position: relative;
+  cursor: default;
+  height: 44px;
+  float: left;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 5px 5px 0
+}
+.select-focus {
+  box-shadow: 0 0 3px #7dcde4;
+}
+.select-area .center {
+  float: left;
+  padding: 10px 11px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #c2c2c2;
+  font-style: italic;
+}
+.select-disabled {
+  background: #eee
+}
+.select-area .select-opener {
+  position: relative;
+  float: right;
+  height: 44px;
+  width: 33px;
+  background: url(/App_Themes/PALotteryAll/images/arrow-19.gif) no-repeat 100% 14px
+}
+.select-options {
+  white-space: nowrap;
+  position: absolute;
+  overflow: hidden;
+  background: #fff;
+  z-index: 5000
+}
+.select-options .drop-holder {
+  border: 1px solid #777;
+  overflow: hidden;
+}
+.select-options ul {
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
+.select-options ul li {
+  width: 100%;
+  float: left
+}
+.select-options ul a {
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+  cursor: default;
+  color: #000;
+}
+.select-options .item-selected a, .select-options a:hover {
+  text-decoration: none;
+  background: #007;
+  color: #fff
+}
+.select-select-1, .select-select-2, .select-select-3, .select-select-4 {
+  height: 34px;
+  margin: 0 11px 5px 0
+}
+.select-select-1 .center, .select-select-2 .center, .select-select-3 .center, .select-select-4 .center {
+  font-size: 14px;
+  line-height: 16px;
+  color: #a8a8a8;
+  padding: 9px 5px 9px 11px
+}
+.select-select-1 .select-opener, .select-select-2 .select-opener, .select-select-3 .select-opener, .select-select-4 .select-opener {
+  background: url(/App_Themes/PALotteryAll/images/select-opener.png) no-repeat 100% 12px;
+  height: 34px
+}
+
+.print-logo, .btn-play-demo, .add-menu .link-sections {
+  display: none
+}
+#page-content {
+  padding: 0 10px
+}
+#page-content p {
+  margin-left: 0
+}
+#page-content h2 {
+  font-size: 20px;
+  line-height: 22px;
+  color: #4d4d4d
+}
+
+#page-content h4 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: $heading-color;
+  font-weight: bold
+}
+#page-content h5 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #4d4d4d;
+  font-weight: bold
+}
+#page-content ul li {
+  margin-bottom: 12px
+}
+#page-content ol li {
+  margin-bottom: 12px
+}
+#page-content .alignleft {
+  display: block;
+  float: left;
+  margin: 0 15px 10px 0
+}
+#page-content .alignright {
+  display: block;
+  float: right;
+  margin: 0 0 10px 15px
+}
+
+.pseudo-form {
+  clear: both;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px
+}
+.pseudo-form-item {
+  display: none
+}
+#page-content form {
+  clear: both;
+  display: block;
+  float: left
+}
+.offset-border {
+  border: 1px solid #c0bfbf;
+  margin-bottom: 20px;
+  padding: 10px 0 0 10px
+}
+#page-content .offset-border h3 {
+  font-size: 22px
+}
+.program_container {
+  clear: both;
+  float: left;
+  margin-bottom: 20px
+}
+.program_container .imagecol {
+  float: left;
+  width: 126px
+}
+.program_container .textcol {
+  float: left;
+  width: 552px
+}
+#page-content .program_container .textcol h3 {
+  border-bottom: 1px solid #c3c3c3;
+  font-size: 20px;
+  margin-bottom: 12px;
+  padding: 0 0 0 10px
+}
+#winlist_container {
+  display: none
+}
+#win_controls {
+  float: right;
+  margin-top: 15px
+}
+#win_controls p {
+  line-height: 27px;
+  display: inline;
+  vertical-align: top
+}
+#win_controls span {
+  display: inline;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal
+}
+#page-content .story_box h4 {
+  font-weight: normal;
+  margin: 0
+}
+
+#LocationTrigger span {
+  width: 25px;
+  height: 30px;
+  float: left;
+  display: block;
+  background: url(/App_Themes/PALotteryAll/images/pal_locationsearch.png) no-repeat 0 2px;
+  padding-right: 10px;
+}
+
+.select-area {
+  position: relative;
+  height: 44px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 5px 5px 0;
+}
+
+.select-area .center {
+  float: left;
+  padding: 12px 11px 6px 11px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #666;
+  font-style: italic;
+}
+.select-disabled {
+  background: #eee
+}
+.select-area .select-opener {
+  position: relative;
+  float: right;
+  height: 36px;
+  width: 33px;
+  background: url(/App_Themes/PALotteryAll/images/arrow-19.gif) no-repeat 100% 14px
+}
+.select-options {
+  white-space: nowrap;
+  position: absolute;
+  overflow: hidden;
+  background: #fff;
+  z-index: 1200;
+  min-width: 300px;
+}
+.select-options.drop-PastWinningNumbersGame {
+  z-index: 10000
+}
+.select-options.drop-PastWinningNumbersYear {
+  z-index: 10001
+}
+.select-options .drop-holder {
+  border: 1px solid #777;
+  overflow: hidden;
+}
+.select-options ul {
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
+.select-options ul li {
+  width: 100%;
+  float: left
+}
+.select-options ul a {
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+  cursor: default;
+  color: #000;
+}
+.select-options .item-selected a, .select-options a:hover {
+  text-decoration: none;
+  background: #007;
+  color: #fff
+}
+.select-select-1, .select-select-2, .select-select-3, .select-select-4 {
+  height: 34px;
+  margin: 0 11px 5px 0
+}
+.select-select-1 .center, .select-select-2 .center, .select-select-3 .center, .select-select-4 .center {
+  font-size: 14px;
+  line-height: 16px;
+  color: #a8a8a8;
+  padding: 9px 5px 9px 11px
+}
+.select-select-1 .select-opener, .select-select-2 .select-opener, .select-select-3 .select-opener, .select-select-4 .select-opener {
+  background: url(/App_Themes/PALotteryAll/images/select-opener.png) no-repeat 100% 12px;
+  height: 34px
+}
+.group-content .filter-form {
+  float: left;
+  padding-right: 12px
+}
+.group-content .filter-form label {
+  float: left;
+  color: #568a42;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 12px 13px 12px
+}
+.group-content .filter-form select {
+  width: 224px;
+  float: left
+}
+.filter-form .select-area .center {
+  padding: 12px 11px
+}
+.filter-form .select-area .select-opener {
+  background-position: 100% 16px
+}
+.heading .buttons {
+  margin: 0;
+  padding: 11px 0;
+  float: left
+}
+.heading .buttons li {
+  float: left;
+  list-style: none;
+  font-size: 12px;
+  line-height: 15px;
+  padding-right: 11px;
+  text-transform: uppercase
+}
+.heading .buttons a {
+  min-width: 134px;
+  padding: 4px 5px 5px;
+  display: block;
+  color: #fff;
+  background: #acacac;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 #6e6e4f;
+  text-shadow: 0 2px 1px #6a6a6a;
+  text-align: center
+}
+.heading .buttons a:hover, .heading .buttons .active a {
+  text-decoration: none;
+  background: #568a42
+}
+.results-holder {
+  width: 100%;
+  padding-bottom: 39px
+}
+
+.results-holder .block, .results-holder .block02, .tools .block {
+  width: 48.5%;
+  position: relative;
+  float: right;
+  vertical-align: top
+}
+.results-holder .block02 {
+  width: 50.5%;
+  margin-right: -8px
+}
+.results-holder .block:first-child, .tools .block:first-child {
+  padding-left: 0;
+  float: left
+}
+.grey-box {
+  margin-bottom: 12px;
+  padding: 0 9px 0 11px;
+  border: 1px solid #cec9c9;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 #cdcc92;
+  background: #dfdfdf
+}
+.grey-box .title {
+  overflow: hidden;
+  padding: 11px 5px 6px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #494949
+}
+.grey-box .title img {
+  display: block
+}
+
+.grey-box .date {
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  display: block;
+  color: #568a42;
+  font-style: normal;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 #36572a, 0 1px 0 #f0f0f0;
+  padding: 7px 0 4px
+}
+.grey-box .title .date {
+  float: right;
+  font-size: 18px;
+  line-height: 21px;
+  color: #494949;
+  text-align: left;
+  text-shadow: none;
+  padding: 8px 0 6px
+}
+.grey-box .result-area {
+  padding-bottom: 9px;
+  border-radius: 16px;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #325026;
+  background: #568a42
+}
+.grey-box .circle-list {
+  padding: 22px 21px 8px 3px
+}
+.grey-box .circle-list li {
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  line-height: 42px;
+  margin: 0 0 4px 4px;
+  border-radius: 21px;
+  background: linear-gradient(to bottom, #ececec 0, #fff 3%, #fff 83%, #fcfcfc 85%, #dadada 98%, #c1c1c1 100%);
+}
+.grey-box .adv-circle {
+  padding-right: 8px
+}
+
+.grey-box .adv-circle .mb-circle {
+  display: inline-block
+}
+
+.grey-box .share {
+  line-height: 17px;
+  color: #696969;
+  padding: 7px 3px 5px;
+  text-shadow: 0 1px 0 #f0f0f0
+}
+.results-holder .btn-play {
+  font-size: 24px;
+  line-height: 27px;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 #757554;
+  text-shadow: 0 2px 1px #6a6a6a;
+  background: linear-gradient(to bottom, #e11f26 0, #e01f26 36%, #d21f25 53%, #ae1e23 85%, #a31e22 100%);
+}
+.results-holder .btn-play img {
+  float: left
+}
+.results-holder .btn-play a {
+  overflow: hidden;
+  color: #fff;
+  display: block;
+  padding: 0 6px 2px
+}
+.results-holder .btn-play a:hover {
+  text-decoration: none
+}
+.results-holder .btn-play a:hover span {
+  text-decoration: underline
+}
+.results-holder .btn-play span {
+  display: block;
+  cursor: pointer;
+  padding: 10px 2px 10px 9px;
+  overflow: hidden
+}
+.results-holder .btn-play span img {
+  float: none
+}
+.more-link a {
+  color: #568a42
+}
+.add-box {
+  overflow: hidden;
+  margin-right: -10px;
+  padding: 16px 0 26px
+}
+.add-box .promo {
+  float: left;
+  padding: 4px 24px 0 0
+}
+.add-box .promo img {
+  display: block
+}
+.add-box .post {
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 18px
+}
+.add-box .post h3 {
+  margin: 0 0 16px;
+  font-size: 18px;
+  line-height: 21px
+}
+.add-box .post h3 a {
+  color: #568a42
+}
+.add-box .post img {
+  display: block
+}
+.create-group-form {
+  padding: 0 0 16px
+}
+.create-group-form .row, .create-group-form .row02, .join-group-form .row {
+  width: 100%;
+  padding-bottom: 42px
+}
+.create-group-form .row02 {
+  padding-bottom: 12px
+}
+
+.create-group-form .row .cell, .create-group-form .row02 .cell, .join-group-form .row .cell {
+  width: 46.3%;
+  float: right
+}
+.create-group-form .row02 .cell {
+  width: 61.5%;
+  float: left
+}
+.create-group-form .row .cell:first-child, .join-group-form .row .cell:first-child {
+  float: left
+}
+.create-group-form .holder, .join-group-form .holder {
+  width: 100%;
+  overflow: visible
+}
+
+.create-group-form textarea {
+  width: 100%;
+  height: 176px;
+  resize: none;
+  overflow: auto
+}
+.create-group-form label {
+  font-size: 18px;
+  line-height: 21px;
+  display: block;
+  padding-bottom: 11px
+}
+.create-group-form .row02 .box {
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 28px 0 1px 38px
+}
+.create-group-form .submit-holder, .invite-members-form .submit-holder {
+  overflow: hidden;
+  padding: 2px 8px 2px 2px
+}
+.join-group-form {
+  padding: 2px 0 50px
+}
+.group-content .join-group-form h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #4d4d4d
+}
+.join-group-form .row {
+  padding: 18px 0 16px
+}
+
+.join-group-form .btn-holder {
+  padding: 0 5px 48px
+}
+
+.join-group-form .add-more, .invite-group-form .invite, .invite-members-form .add-more, .enter-numbers-form .add-more, .enter-numbers-form .upload-all, .calculator-form .add-more {
+  float: right;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 6px 8px 7px 7px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px #757554;
+  text-shadow: 0 2px 1px #6a6a6a;
+  background: linear-gradient(to bottom, #e11f26 0, #e01f26 36%, #d21f25 53%, #ae1e23 85%, #a31e22 100%);
+}
+.join-group-form .submit-holder {
+  padding-right: 6px
+}
+.share-block {
+  margin: 0 92px 20px 77px;
+  padding: 11px 15px 7px 16px;
+  border: 1px solid #cec9c9;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px #cdcc92;
+  background: #f6f4f4
+}
+.group-content .share-block h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #646363;
+  font-weight: bold
+}
+.share-block .row {
+  padding-bottom: 10px
+}
+
+.share-block .row {
+  min-height: 59px;
+  padding: 11px 15px;
+  border: 1px solid #cfcece;
+  background: #fff;
+  font: 14px/17px;
+  color: #5c5c5c;
+}
+.share-block .row a {
+  color: #1860a2;
+  text-decoration: underline
+}
+.share-block .row a:hover {
+  text-decoration: none
+}
+.share-block .btns-holder {
+  width: 100%;
+  overflow: hidden;
+  position: relative
+}
+.share-block .btns-holder .holder {
+  position: relative;
+  left: 50%;
+  float: left;
+  overflow: visible;
+  padding: 0
+}
+.share-block .btns-holder .holder .frame {
+  position: relative;
+  float: left;
+  left: -50%;
+  padding: 15px 0 0
+}
+.share-block .btns-holder span {
+  width: 205px;
+  margin: 0 20px 5px;
+  float: left;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px #757554
+}
+.share-block .btns-holder a {
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 2px 1px #6a6a6a
+}
+.share-block .btn-facebook {
+  background: linear-gradient(to bottom, #6080b1 0, #3c65a0 100%);
+}
+.share-block .btn-twitter {
+  background: linear-gradient(to bottom, #6bb0ec 0, #4691e2 100%);
+}
+.share-block .btn-facebook a {
+  padding: 6px 3px 4px 50px;
+  background: url(/App_Themes/PALotteryAll/images/sprite-icons.png) no-repeat -414px -28px
+}
+.share-block .btn-twitter a {
+  padding: 6px 3px 4px 48px;
+  background: url(/App_Themes/PALotteryAll/images/sprite-icons.png) no-repeat -373px -66px
+}
+.group-info {
+  line-height: 15px;
+  margin: -7px 0 21px;
+  word-spacing: -1px
+}
+.group-info header {
+  padding-bottom: 8px
+}
+.group-info h4 {
+  margin: 0 0 1px;
+  font-size: 20px;
+  line-height: 23px
+}
+.invite-group-form {
+  font-size: 12px;
+  line-height: 15px;
+  padding: 0 1px 20px 2px
+}
+.invite-group-form a {
+  text-decoration: underline;
+  color: #568a42
+}
+.invite-group-form a:hover {
+  text-decoration: none
+}
+.invite-group-form p span {
+  padding-left: 24px
+}
+.invite-group-form .btn-holder {
+  padding: 0 5px 14px;
+  overflow: hidden
+}
+.invite-group-form .invite {
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: none;
+  float: left;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 5px 11px 6px 14px
+}
+.invite-group-form .invite:hover {
+  text-decoration: underline
+}
+.invite-group-form table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f8f5f5;
+  box-shadow: 0 1px 2px #84845e;
+  font-size: 14px;
+  line-height: 17px
+}
+.invite-group-form table th {
+  vertical-align: top;
+  padding: 7px 5px 10px;
+  text-align: left
+}
+.invite-group-form table .col01 {
+  width: 160px;
+  padding-left: 24px
+}
+.invite-group-form table .col02 {
+  width: 180px
+}
+.invite-group-form table .col03 {
+  width: 204px
+}
+.invite-group-form table .col04 {
+  width: 108px
+}
+.invite-group-form table td {
+  vertical-align: top;
+  padding: 11px 5px;
+  border-top: 1px solid #bdbdbd;
+  background: url(/App_Themes/PALotteryAll/images/bg-border.png) repeat-x
+}
+.invite-group-form table .col01 {
+  padding-left: 24px
+}
+.invite-group-form table .col04 {
+  padding-right: 61px;
+  text-align: center
+}
+.invite-group-form .odd td {
+  background: #ccedbf url(/App_Themes/PALotteryAll/images/bg-border.png) repeat-x
+}
+.invite-group-form .submit-holder {
+  overflow: hidden;
+  padding: 5px 39px 5px 23px
+}
+.invite-group-form .submit-holder span {
+  float: left
+}
+.manage-tickets-form .row {
+  height: 279px;
+  overflow: auto;
+  box-shadow: 0 0 1px #cbc99b;
+  border: 1px solid #cec9c9;
+  background: #f8f5f5
+}
+.manage-tickets-form table {
+  width: 100%;
+  border-collapse: collapse
+}
+.manage-tickets-form table th {
+  padding: 6px 5px 14px;
+  vertical-align: top;
+  text-align: left;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase
+}
+.manage-tickets-form table .col01 {
+  width: 210px;
+  padding-left: 15px
+}
+.manage-tickets-form table .col02 {
+  width: 54px
+}
+.manage-tickets-form table .col03 {
+  width: 39px
+}
+.manage-tickets-form table td {
+  padding: 8px 5px;
+  vertical-align: top
+}
+.manage-tickets-form table .col01 {
+  padding-left: 13px
+}
+.manage-tickets-form table .col02 {
+  white-space: nowrap
+}
+.manage-tickets-form table .col03 {
+  text-align: center;
+  padding: 8px 9px 9px 0
+}
+.manage-tickets-form ul {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+.manage-tickets-form li {
+  float: left;
+  padding-left: 7px
+}
+.manage-tickets-form li:first-child {
+  padding-left: 0
+}
+.manage-tickets-form .marked li {
+  border-bottom: 1px solid #568a42;
+  color: #568a42
+}
+.manage-tickets-form .view {
+  padding: 8px 17px;
+  overflow: hidden
+}
+.manage-tickets-form .view a, .enter-numbers-form .upload {
+  padding: 0 0 0 24px;
+  float: left;
+  text-decoration: underline;
+  color: #568a42;
+  background: url(/App_Themes/PALotteryAll/images/sprite-icons.png) no-repeat -354px -105px
+}
+.manage-tickets-form .view a:hover {
+  text-decoration: none
+}
+.manage-tickets-form .submit-holder {
+  overflow: hidden;
+  padding: 11px 16px 22px 10px
+}
+.manage-tickets-form .submit-holder .submit-enter {
+  width: 197px;
+  height: 18px;
+  padding: 4px 14px 3px;
+  float: left;
+  white-space: nowrap
+}
+.manage-tickets-form .submit-edit {
+  width: 54px;
+  float: right
+}
+.tools {
+  width: 100%;
+  overflow: hidden;
+  margin: -29px 0 0;
+  padding-bottom: 21px
+}
+.docs {
+  margin: 0;
+  padding: 0 8px 1px;
+  list-style: none
+}
+.docs li {
+  overflow: hidden;
+  padding-bottom: 9px
+}
+.docs a {
+  float: left;
+  color: #568a42
+}
+.docs .pdf {
+  padding: 1px 0 3px 27px;
+  background: url(/App_Themes/PALotteryAll/images/sprite-icons.png) no-repeat -318px -140px
+}
+
+.manage-group-form {
+  padding: 0 2px 20px 1px
+}
+.manage-group-form table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f8f5f5;
+  box-shadow: 0 1px 2px #84845e
+}
+.manage-group-form table th {
+  vertical-align: top;
+  text-align: left;
+  padding: 7px 5px 10px
+}
+.manage-group-form table .col01 {
+  width: 104px;
+  padding-left: 24px
+}
+.manage-group-form table .col02 {
+  width: 125px
+}
+.manage-group-form table .col03 {
+  width: 134px
+}
+.manage-group-form table .col04 {
+  width: 148px
+}
+.manage-group-form table .col05 {
+  width: 131px
+}
+.manage-group-form table td {
+  vertical-align: top;
+  padding: 11px 5px;
+  border-top: 1px solid #bdbdbd;
+  background: url(/App_Themes/PALotteryAll/images/bg-border.png) repeat-x
+}
+.manage-group-form .odd td {
+  background: #ccedbf url(/App_Themes/PALotteryAll/images/bg-border.png) repeat-x
+}
+.manage-group-form table .col01 {
+  padding-left: 24px
+}
+.manage-group-form table .col04 {
+  white-space: nowrap
+}
+.manage-group-form table .col05 {
+  vertical-align: middle;
+  text-align: center;
+  padding-right: 32px
+}
+.manage-group-form .submit-holder {
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 7px 22px 7px 23px
+}
+.manage-group-form .submit-holder span {
+  float: left
+}
+
+.invite-members-form {
+  min-width: 536px;
+  padding-right: 79px
+}
+.invite-members-form .row {
+  padding-bottom: 4px
+}
+
+.invite-members-form label {
+  width: 20%;
+  padding: 16px 5px 16px 0;
+  float: left
+}
+
+.invite-members-form .btn-holder, .enter-numbers-form .btn-holder {
+  margin-top: -1px;
+  padding-bottom: 56px
+}
+
+.invite-members-form .submit-holder {
+  padding: 2px 8px 30px 52px
+}
+.enter-numbers-form {
+  min-width: 913px;
+  padding-bottom: 28px
+}
+.enter-numbers-form .row-holder {
+  padding: 0 16px 30px 12px
+}
+
+.enter-numbers-form .row-holder .row {
+  float: left;
+  padding-top: 22px
+}
+.enter-numbers-form .row-holder .row .cell {
+  padding-bottom: 22px
+}
+.enter-numbers-form .row-holder .box {
+  float: left;
+  padding-right: 7px
+}
+.enter-numbers-form .row-holder label {
+  width: 32px;
+  padding: 7px 0;
+  font-size: 18px;
+  line-height: 21px;
+  float: left
+}
+.enter-numbers-form .row-holder .box:first-child label {
+  width: 81px
+}
+.enter-numbers-form .btn-holder {
+  margin: 0;
+  padding: 1px 0 0
+}
+.enter-numbers-form .row02 .btn-holder {
+  padding-top: 4px
+}
+.enter-numbers-form .add-more {
+  float: left
+}
+.enter-numbers-form .upload-all {
+  padding: 5px 12px 8px 11px;
+  text-transform: none
+}
+.enter-numbers-form .row02 {
+  width: 337px;
+  float: right
+}
+.enter-numbers-form .row02 h3 {
+  margin: 0 0 0 20px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #568a42
+}
+.enter-numbers-form .row02 .cell {
+  padding: 7px 28px 26px 0
+}
+
+.enter-numbers-form select {
+  width: 124px
+}
+.enter-numbers-form .select-area {
+  height: 27px
+}
+.enter-numbers-form .select-area .center {
+  font-size: 14px;
+  line-height: 17px;
+  color: #4d4d4d;
+  font-style: normal;
+  padding: 5px 22px 5px 24px
+}
+.enter-numbers-form .select-area .select-opener {
+  height: 27px;
+  margin-right: -6px;
+  background-position: 100% 6px
+}
+.enter-numbers-form .upload {
+  float: left;
+  margin: 0 0 0 32px;
+  padding: 3px 0 3px 23px;
+  background-position: -354px -103px
+}
+.enter-numbers-form .upload:hover {
+  text-decoration: none
+}
+.enter-numbers-form .submit-holder {
+  padding: 0 15px 0 0
+}
+.calculator-form {
+  width: 602px;
+  font-size: 12px;
+  line-height: 15px
+}
+.calculator-form p {
+  margin: 0 0 16px
+}
+.calculator-form h3 {
+  margin: 0 0 3px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #568a42
+}
+
+.calculator-form .row {
+  padding-bottom: 21px
+}
+.calculator-form .tip {
+  display: block;
+  clear: both;
+  padding: 3px 0
+}
+.calculator-form .radio-holder {
+  font-size: 14px;
+  line-height: 17px;
+  padding: 0 1px 13px
+}
+.rad-area {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #7b7b7b;
+  background: linear-gradient(to bottom, #f1f2f2 0, #cecfd0 7%, #e6e7e8 100%);
+  border-radius: 8px;
+  float: left
+}
+.rad-checked span {
+  width: 8px;
+  height: 8px;
+  margin: 4px 0 0 4px;
+  border-radius: 4px;
+  background: #568a42;
+  box-shadow: 0 1px 0 #fff, inset 0 1px 0 #365629;
+  display: block
+}
+.radio-holder label {
+  float: left;
+  padding: 0 36px 5px 6px
+}
+.calculator-form .row02 {
+  width: 100%;
+  display: table;
+  margin: -6px 0 -14px
+}
+.calculator-form .row02 h3 {
+  white-space: nowrap;
+  margin-bottom: 5px
+}
+.calculator-form .row02 .cell {
+  vertical-align: top;
+  display: table-cell;
+  padding-right: 5px
+}
+.calculator-form .row02 .col01 {
+  width: 255px
+}
+.calculator-form .row02 .col02 {
+  width: 174px
+}
+.calculator-form .row02 .col03 {
+  width: 158px
+}
+.calculator-form .row02 .block {
+  padding-bottom: 12px
+}
+.calculator-form .btn-holder {
+  padding: 0 19px 11px 0
+}
+.calculator-form .add-more {
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 7px 7px 7px 6px;
+  float: left
+}
+.calculator-form .btn-holder .tip {
+  width: auto;
+  clear: none;
+  float: right
+}
+.calculator-form .submit-holder {
+  padding: 0 23px 5px 72px
+}
+.calculator-form .submit-holder a {
+  float: right;
+  color: #568a42;
+  text-decoration: underline;
+  margin-top: 12px
+}
+.calculator-form .submit-holder a:hover {
+  text-decoration: none
+}
+
+#fancybox-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -20px auto auto -20px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1104;
+  display: none
+}
+#fancybox-loading div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 480px
+}
+#fancybox-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1100;
+  display: none
+}
+#fancybox-tmp {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  overflow: auto;
+  display: none
+}
+#fancybox-wrap {
+  min-width: 380px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1101;
+  outline: 0;
+  display: none
+}
+#fancybox-outer {
+  position: relative;
+  width: 100%;
+  height: 100%
+}
+#fancybox-content {
+  min-width: 380px;
+  width: 0;
+  height: 0;
+  padding: 0;
+  outline: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1102
+}
+.fancybox-title-inside {
+  display: none;
+}
+#profile_nav {
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+#profile_nav li {
+  float: left
+}
+
+.jackpotLevels {
+  display: none
+}
+.clear {
+  clear: both
+}
+#winningemailsettings label div {
+  display: none;
+  font-style: italic;
+}
+
+.errormessage, .EditingFormErrorLabel {
+  background-color: #fff;
+  border: 1px solid red;
+  color: red;
+  clear: both;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 3px;
+  margin-bottom: 10px
+}
+.formActionMessage {
+  background-color: #fff;
+  border: 1px solid $message-border-color;
+  color: $message-text-color;
+  display: block;
+  clear: both;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 3px;
+  margin-bottom: 10px
+}
+.connectOption {
+  width: 210px;
+  margin: 8px;
+  padding: 10px 2px;
+  border: 1px solid #aaa;
+  min-height: 210px;
+  float: left;
+  position: relative
+}
+.connectOption p {
+  padding: 0 10px 40px
+}
+.connectOption .socialIcon, .connectOption .connectButton, .connectOption .connectButton a {
+  display: block;
+  width: 100%
+}
+.connectOption .socialIcon {
+  margin-bottom: 10px
+}
+.connectOption .connectButton {
+  position: absolute;
+  left: 0;
+  bottom: 10px
+}
+.connectOption .connectButton a {
+  margin-bottom: 2px
+}
+.connectOption img {
+  margin: 0 auto;
+  display: block
+}
+.PagerControl {
+  clear: both;
+  display: block;
+  margin-bottom: 20px;
+  width: 100%
+}
+.dailyNumbers {
+  background-color: $green;
+  margin: 0 auto;
+  border-radius: 14px;
+  width: 270px;
+  box-shadow: inset 1px 1px 0 #666
+}
+
+#become-retailer-form {
+  background-color: #e7e7e7;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center
+}
+#become-retailer-form p {
+  margin: 0 0 10px 0;
+  padding: 0;
+  text-align: left
+}
+#become-retailer-form label {
+  display: none;
+  float: left
+}
+#become-retailer-form>span {
+  float: left;
+  clear: both;
+  padding: 0
+}
+#retailer-form-contain>p {
+  display: none
+}
+#additionalLinks {
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  top: -24px;
+  right: 10px
+}
+.supporting-buttons img {
+  display: block;
+  margin-bottom: 24px
+}
+
+.vip-frame {
+  background-color: #e9e89c;
+  border: 3px solid #dcdb8c;
+  color: #568a42;
+  margin-bottom: 14px;
+  overflow: hidden;
+  padding: 12px 10px;
+  line-height: 20px;
+}
+.vip-frame p {
+  color: #568a42
+}
+
+.vip-menu-slider {
+  background-color: #fcfcfc;
+  padding: 10px;
+  position: absolute;
+  width: 150px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.vip-menu-slider a {
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 10px
+}
+#profile_nav {
+  border-left: 1px solid #03613a;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  min-height: 48px;
+}
+#page-content #profile_nav li {
+  margin-bottom: 0;
+}
+#profile_nav li a, #profile_nav li span {
+  font-size: 17px;
+  font-weight: normal;
+  display: block;
+  margin-right: 0;
+  border-top: 1px solid #03613a;
+  border-bottom: 1px solid #03613a;
+  border-right: 1px solid #03613a;
+  padding: 14px 10px;
+  color: #fff;
+  background-image: linear-gradient(to bottom, #19B172 0%, #109F64 100%, #078C55 100%);
+  background-color: #078c55;
+}
+#profile_nav li a:hover, #profile_nav li .on, #profile_nav li .on {
+  text-decoration: none;
+  background: #fff;
+  color: #333;
+}
+#profile_nav li:last-child a, #profile_nav li:last-child span {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+#btn-add-widgets {
+  float: right
+}
+#vip-widgets .vip-dashboard-widget {
+  background-color: #fff;
+  border: 1px solid #cec9c9;
+  clear: none;
+  float: left;
+  margin: 0 8px 16px 8px;
+  padding: 8px;
+  height: 236px;
+  border-radius: 4px;
+}
+#vip-widgets .widget-one-third {
+  width: 194px
+}
+#vip-widgets .widget-two-thirds {
+  width: 422px
+}
+#vip-widgets .vip-dashboard-widget .vip-widget-customize {
+  float: right;
+  margin-right: 8px
+}
+#vip-widgets .vip-dashboard-widget .vip-widget-remove {
+  float: right
+}
+#vip-widgets .vip-dashboard-widget h4 {
+  border-bottom: 1px solid #e3e3e2;
+  color: #568a42;
+  padding-top: 6px;
+  padding-bottom: 2px
+}
+.mynumbers-logo {
+  display: block;
+  margin: 0 auto
+}
+#widget_whatsyournumber p {
+  text-align: center
+}
+#vip-widgets .vip-dashboard-widget h5 {
+  font-size: 12px;
+  margin-top: 6px
+}
+#vip-widgets .winning_number {
+  width: 20px;
+  height: 20px;
+  font-size: 11px;
+  line-height: 17px;
+  background: url(/App_Themes/PALotteryAll/images/bg-ball-white-small.png) no-repeat
+}
+#vip-widgets .winning_number_yellow {
+  background: url(/App_Themes/PALotteryAll/images/bg-ball-yellow-small.png) no-repeat
+}
+#vip-widgets .winning_number_red {
+  background: url(/App_Themes/PALotteryAll/images/bg-ball-red-small.png) no-repeat
+}
+#vip-widgets .usernumbers {
+  margin-bottom: 6px
+}
+#vip-widgets .vip-dashboard-widget {
+  font-size: 12px;
+  line-height: 14px
+}
+#vip-widgets .vip-dashboard-widget p {
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0 0 4px 0;
+  padding: 0
+}
+#vip-widgets #widget_game_rss p {
+  font-size: 11px
+}
+.mynumbers-logo-contain {
+  height: 40px
+}
+#vip-widgets .vip-dashboard-widget .twtr-tweet-text {
+  font-size: 11px
+}
+.twtr-fav {
+  display: block;
+  padding-bottom: 4px
+}
+.twtr-hd {
+  display: none
+}
+.twtr-ft {
+  display: none
+}
+.goleft {
+  display: block;
+  float: left;
+  margin: 0 15px 0 0
+}
+.goright {
+  display: block;
+  float: right;
+  margin: 0 0 0 15px
+}
+#vip-widgets #widget_hasmynumbereverwon #hmnew_number_slots {
+  display: none
+}
+#vip-widgets #widget_hasmynumbereverwon #hmnew_btn_search {
+  display: none
+}
+#vip-widgets #widget_hasmynumbereverwon p {
+  font-size: 11px
+}
+#vip-widgets #widget_hasmynumbereverwon select, #vip-widgets #widget_hasmynumbereverwon select {
+  padding: 0;
+  font-size: 11px
+}
+#vip-widgets #weather-city {
+  color: #4a4949;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px
+}
+#vip-widgets #weather-primary-conditions {
+  color: #4a4949;
+  line-height: normal;
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-bottom: 30px
+}
+#weather-temp {
+  float: left;
+  font-size: 60px;
+  font-weight: bold;
+  padding-left: 10px;
+  width: 110px
+}
+#weather-image {
+  float: left;
+  padding-top: 20px;
+  width: 70px
+}
+#weather-secondary-conditions {
+  text-align: center
+}
+#widget_trivia .PollTitle {
+  display: none
+}
+#widget_trivia .PollQuestion {
+  display: block;
+  font-size: 11px;
+  margin-bottom: 4px
+}
+#widget_trivia .PollAnswerText {
+  font-size: 11px;
+  display: block;
+  margin-top: 4px
+}
+#widget_trivia .PollAnswerRadio label {
+  font-size: 11px
+}
+.PollGraph {
+  border: 1px solid #ccc;
+  margin-bottom: 2px;
+  height: 10px
+}
+.PollGraph div {
+  background: linear-gradient(to bottom, #feccb1 0, #f17432 50%, #ea5507 51%, #fb955e 100%);
+  height: 10px
+}
+.SearchResults {
+  padding-top: 26px
+}
+select {
+  color: #666;
+  padding: 8px;
+  font-size: 18px;
+  border-radius: 4px
+}
+
+#vip-widgets .vip-dashboard-widget .clock-container {
+  text-align: center
+}
+#vip-widgets .vip-dashboard-widget h5 {
+  margin-bottom: 6px;
+  text-align: center
+}
+#vip-widgets .vip-dashboard-widget .clock-container p {
+  text-align: center
+}
+.clock-numbers {
+  margin: 6px auto 6px auto;
+  overflow: hidden;
+  padding-left: 5px
+}
+.clock-number, .countdown_section {
+  clear: none;
+  display: block;
+  float: left;
+  font-size: 10px;
+  font-weight: bold;
+  margin-right: 2px
+}
+.clock-number span, .countdown_amount {
+  border: 1px solid #cec9c9;
+  color: #568a42;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 7px 0;
+  border-radius: 3px;
+  text-align: center;
+  width: 40px;
+  background: linear-gradient(to bottom, #fff 0, #f6f6f6 47%, #ededed 100%);
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 1)
+}
+#feedbackForm .FormPanel label {
+  font-weight: bold
+}
+#feedbackForm .FormPanel p {
+  margin: 0;
+  padding: 0
+}
+#feedbackForm .FormPanel textarea {
+  border: 1px solid #ccc;
+  width: 90%;
+  border-radius: 4px
+}
+#feedbackForm .CaptchaTextBox {
+  width: 100px
+}
+#retailer-form {
+  background-color: #f9f5f6;
+  padding: 20px
+}
+@media only screen and (max-width:1090px) {
+  #winning-numbers-history .wnh-search {
+    width: 80%;
+    position: static;
+    margin: 6% auto;
+  }
+  #winning-numbers-history select[name=pwn_game] {
+    width: 80%;
+  }
+  .enter-numbers-form {
+    min-width: 320px
+  }
+  .enter-numbers-form .row-holder .row, .enter-numbers-form .row-holder .row02 {
+    width: 500px;
+    margin: 0 auto;
+    padding-bottom: 12px;
+    float: none
+  }
+  .enter-numbers-form .row-holder .row02 {
+    padding-bottom: 0
+  }
+  .enter-numbers-form .upload-all {
+    float: left
+  }
+}
+/* TABLET VIEW */
+
+@media only screen and (max-width:1019px) {
+  .two-thirds {
+    width: 55%
+  }
+
+  .add-menu {
+    top: 0;
+    margin-bottom: 3px;
+    padding: 0 3px;
+    right: -15px
+  }
+
+  .container .main-column {
+    width: 56%;
+    padding-right: 3px
+  }
+  .container .holder {
+    padding: 0 0 0 9px
+  }
+  .text-game-with {
+    width: 230px;
+    height: 52px;
+    background-size: cover;
+    margin-bottom: 4px
+  }
+  .result-area-alt {
+    display: none
+  }
+  .add-menu ul {
+    right: 3px
+  }
+  .container p {
+    margin: 0 0 25px;
+    line-height: 18px
+  }
+  .text-top-prizes {
+    width: 100%;
+    background-size: 100%
+  }
+  .select-select-2 {
+    clear: left
+  }
+
+}
+@media only screen and (max-width:990px) {
+  .results-holder .btn-play {
+    text-align: center
+  }
+  .results-holder .btn-play img {
+    float: none;
+    vertical-align: top
+  }
+  .results-holder .btn-play span {
+    float: none;
+    display: block;
+    text-align: left
+  }
+  .results-holder .btn-play span img {
+    vertical-align: middle
+  }
+}
+@media only screen and (max-width:980px) {
+  .share-block .btns-holder span {
+    float: none;
+    display: block
+  }
+  .invite-members-form {
+    min-width: 1px
+  }
+}
+@media only screen and (max-width:940px) {
+  .add-box .promo {
+    float: none;
+    padding-bottom: 14px
+  }
+  .container .group-content .post article p {
+    font-size: 15px;
+    line-height: 18px
+  }
+  .create-group-form .row, .create-group-form .row02 {
+    padding-bottom: 0
+  }
+  .create-group-form .row .cell, .create-group-form .row .cell:first-child {
+    width: auto;
+    float: none;
+    padding-bottom: 10px
+  }
+  .manage-tickets-form .submit-holder .submit-enter {
+    width: auto;
+    margin-bottom: 5px;
+    float: none;
+    display: block;
+    text-align: center
+  }
+}
+@media only screen and (max-width:840px) {
+  .create-group-form .row02 .cell {
+    width: auto;
+    float: none
+  }
+  .create-group-form .row02 .box {
+    padding-left: 0
+  }
+}
+@media only screen and (max-width:800px) {
+  .calculator-form {
+    width: auto
+  }
+}
+/* MOBILE VIEW */
+
+@media only screen and (max-width:767px), screen and (device-width: 320px) {
+  #profile_nav {
+    min-height: 44px;
+  }
+  #profile_nav li a {
+    font-size: 12px;
+    padding: 12px 4px;
+  }
+  #profile_nav li span {
+    font-size: 12px;
+    padding: 12px 5px;
+  }
+  .program_container .imagecol {
+    float: none;
+    width: 90%;
+  }
+  .program_container .textcol {
+    float: none;
+    width: 90%;
+  }
+  .vip-frame img {
+    width: 100%;
+  }
+  .mobileToggleControl {
+    padding: 0 27px 0 0;
+    background: url(/App_Themes/PALotteryAll/images/accordian-arrow-right.png) no-repeat 95% 5px
+  }
+  .mobileToggleControl.toggled {
+    background: url(/App_Themes/PALotteryAll/images/accordian-arrow-down.png) no-repeat 95% 7px
+  }
+  .mobileToggleListener {
+    display: none
+  }
+  .mobileToggleControlSecondary {
+    padding: 0 37px 0 0;
+    background: url(/App_Themes/PALotteryAll/images/accordian-arrow-right.png) no-repeat 95% 5px
+  }
+  .mobileToggleControlSecondary.toggled {
+    background: url(/App_Themes/PALotteryAll/images/accordian-arrow-down.png) no-repeat 95% 7px
+  }
+  .mobileToggleListenerSecondary {
+    display: none
+  }
+
+  #additionalLinks {
+    top: 4px;
+    right: auto
+  }
+  #additionalLinks .rss {
+    padding: 0 0 0 20px
+  }
+  .two-thirds {
+    width: auto
+  }
+  .mobile-small {
+    font-size: 11px
+  }
+  .column {
+    float: none;
+    clear: both
+  }
+
+  #become-retailer-form {
+    float: none
+  }
+  .night .page {
+    background: url(/App_Themes/PALotteryAll/images/bg-page-night-mobile.jpg) no-repeat 50% 0
+  }
+
+  .page {
+    background-position: 50% 28px
+  }
+
+  .add-menu {
+    top: 0;
+    margin-bottom: 27px
+  }
+
+  .add-menu ul {
+    display: none
+  }
+
+  .add-menu .link-sections {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 6px 2px 6px 2px;
+    border-radius: 0 0 6px 6px;
+    min-width: 149px;
+    color: #fff;
+    text-align: center;
+    background: #048251;
+    text-decoration: none;
+    box-shadow: 0 0 1px #999;
+    border-bottom: 1px solid #787979;
+    position: absolute;
+    bottom: -13px;
+    right: 15px;
+    cursor: pointer
+  }
+
+  .add-menu .link-sections span {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 20px 0 0;
+    background: url(/App_Themes/PALotteryAll/images/arrow-10.png) no-repeat 100% 5px
+  }
+  .container {
+    padding: 20px 0 0
+  }
+
+  .result-area {
+    display: none
+  }
+  .container .main-column {
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin: 0
+  }
+  .btn-play-demo {
+    display: block;
+    background: #048251;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 447px;
+    margin: 0 auto 22px;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 18px 0
+  }
+
+  .container p {
+    margin-left: 15px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .container label {
+    font-size: 18px
+  }
+  #create-progress {
+    width: 400px
+  }
+  .container p small {
+    font-size: 11px
+  }
+
+  .group-content .join-group-form h4 {
+    font-size: 21px;
+    line-height: 24px
+  }
+  .share-block {
+    margin: 0 0 20px
+  }
+  .group-info header span {
+    font-size: 18px;
+    line-height: 21px
+  }
+  .invite-members-form {
+    padding-right: 0
+  }
+  .invite-members-form label {
+    float: none;
+    width: auto;
+    display: block;
+    padding: 8px 0
+  }
+  .invite-members-form .btn-holder {
+    padding-bottom: 16px
+  }
+  .invite-members-form .submit-holder {
+    padding: 2px 0 15px
+  }
+  .enter-numbers-form {
+    margin-left: -6px
+  }
+  .enter-numbers-form .row-holder {
+    padding: 0 0 30px
+  }
+  .enter-numbers-form .row-holder .row {
+    padding-top: 0
+  }
+  .enter-numbers-form .row-holder .row, .enter-numbers-form .row-holder .row02 {
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 12px;
+    float: none
+  }
+  .enter-numbers-form .row-holder .row02 {
+    padding-bottom: 0
+  }
+  .enter-numbers-form .row-holder .row .cell {
+    padding-bottom: 12px
+  }
+  .enter-numbers-form .row02 .cell {
+    padding: 7px 0 12px
+  }
+  .enter-numbers-form .row-holder .box {
+    float: none;
+    overflow: hidden;
+    padding: 0 0 5px
+  }
+  .enter-numbers-form .row-holder .box label {
+    float: none;
+    display: block;
+    clear: both
+  }
+  .enter-numbers-form .upload {
+    float: right;
+    margin: 0
+  }
+  .enter-numbers-form .upload-all {
+    float: left
+  }
+  .enter-numbers-form .submit-holder {
+    padding-right: 0
+  }
+  .calculator-form .btn-holder {
+    padding-right: 0
+  }
+  .calculator-form .submit-holder {
+    padding: 0 0 5px
+  }
+  .calculator-form .row02 h3 {
+    font-size: 15px;
+    line-height: 18px
+  }
+
+  .calculator-form .btn-holder .tip {
+    width: 115px
+  }
+  .calculator-form .submit-holder a {
+    padding-right: 3px
+  }
+}
+
+.btn-table-print img {
+  display: block;
+  float: right;
+  padding: 10px
+}
+.dynamic-print-area {
+  display: none
+}
+.frame ul li.mraffle div {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: normal
+}
+.frame ul li.mraffle div strong {
+  color: #f9e655
+}
+.frame ul li.mraffle div span {
+  display: block;
+  font-size: 16px;
+  padding: 20px 0 0 0
+}
+.frame ul li.mraffle div .smaller {
+  display: inline;
+  font-size: 24px
+}
+.wb-pod-container {
+  margin-bottom: 12px;
+  overflow: hidden;
+  text-align: center
+}
+.wb-pod {
+  background-image: url(/Custom/uploadedimages/wb/bg-who-benefits-items.jpg);
+  background-repeat: repeat-x;
+  border: 1px solid #ccc;
+  float: left;
+  height: 187px;
+  margin: 0 5px 20px 5px;
+  width: 341px
+}
+.wb-pod h4 {
+  margin-bottom: 15px;
+  padding-top: 10px;
+  text-align: center
+}
+.wb-pod-logo-contain {
+  float: left;
+  padding-left: 10px;
+  padding-top: 15px;
+  width: 143px
+}
+.wb-pod-video-contain {
+  float: left;
+  width: 172px
+}
+.wb-pod-last {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  overflow: hidden
+}
+@media only screen and (max-width:1019px) {
+  .wb-pod-last {
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden
+  }
+}
+@media only screen and (max-width:767px) {
+  .wb-pod-last {
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden
+  }
+}
+
+.giveaway {
+  background-image: url(/Custom/uploadedimages/football-giveaway.png);
+  background-repeat: no-repeat;
+  font-weight: bold;
+  padding: 11px 0 10px 56px;
+}
+
+/* NEW GAMES */
+
+#page-content .gamepageoptions li {
+  width: 49%
+}
+.dailyNumbers {
+  clear: both;
+}
+
+.middayVideoLink {
+  display: inline-block;
+  margin-top: 4px;
+  font-weight: bold;
+}
+.linkViewPastWinningNumbers {
+  float: right;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 15px;
+  display: block;
+}
+#howtoplay {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.helper {
+  position: relative;
+}
+.helper span {
+  background: #fff;
+  border: 3px solid #000;
+  color: #333;
+  font-size: 12px;
+  font-weight: normal;
+  display: none;
+  left: 0;
+  padding: 10px;
+  position: absolute;
+  top: 30px;
+  z-index: 50000;
+  text-align: left;
+  min-width: 306px;
+}
+.helper span h2 {
+  display: none;
+}
+.helper span p {
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width:1019px) {
+  #cboxLoadedContent {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+@media screen and (max-width:767px) {
+  .linkViewPastWinningNumbers {
+    float: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 auto 20px auto;
+    display: block;
+  }
+}
+/* HOMEPAGE RIBBONS */
+
+#featuresContainer {
+  position: relative;
+}
+
+/* begin new benefits info promos */
+
+.benefits-promo {
+  background-color: #fff200;
+  border: 3px solid #e6e7e7;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0 0 32px 0;
+  padding: 32px 18px 0 18px;
+  text-align: left;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+  -webkit-font-smoothing: antialiased
+}
+.benefits-promo .btn-contain {
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .benefits-promo {
+    width: 70%;
+  }
+  .benefits-promo .btn-contain {
+    text-align: left;
+  }
+}
+/* end new benefits info promos */
+
+/* added for the active links bg */
+
+.list.CMSListMenuLink:active, .list.CMSListMenuLink:focus {
+  background: #e9eaea;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* added for FastPlay Remaining games */
+
+.is-new-game-True {
+  background-image: url(/Custom/uploadedimages/new-instant-game.png);
+  background-repeat: no-repeat;
+  background-position: -95px -84px;
+}
+.locked_event_info info_top {
+  display: none;
+}
+.new-gov {
+  font-weight: bold;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  color: #343434;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+#sticky-anchor {
+  height: 0;
+}
+
+@import 'imported/jcf';
+
+@import 'modules/header';
+@import 'modules/logo-area';
+@import 'modules/bottom-container';
+@import 'modules/vip-area';
+@import 'modules/circles';
+@import 'modules/carousel';
+@import 'modules/mmc';
+@import 'modules/text-container';
+@import 'modules/aside';
+@import 'modules/promo-slides';
+@import 'modules/all-games-holder';
+@import 'modules/promo-area';
+@import 'modules/footer';
+@import 'modules/popups';
+@import 'modules/columns';
+@import 'modules/buttons';
+@import 'modules/forms';
+@import 'modules/accordion';
+@import 'modules/breadcrumbs';
+@import 'modules/nav';
+@import 'modules/nav-mobile';
+@import 'modules/slide-show';
+@import 'modules/smart-banner';
+@import 'modules/tabs';
+@import 'modules/info-container';
+@import 'modules/winners-area';
+@import 'modules/game-list';
+@import 'modules/top-bar';
+@import 'modules/second-chance-login';
+@import 'modules/winners-map';
+@import 'modules/detail-box';
+@import 'modules/search-form';
+@import 'modules/pagination';
+@import 'modules/bottom-area';
+@import 'modules/drawing';
+@import 'modules/games-info';
+@import 'modules/page-content-games';
+@import 'modules/pool-play';
+@import 'modules/coupons';
+@import 'modules/featherlight';
+@import 'modules/tables';
+@import 'modules/onsert';
+@import 'modules/activeGame_li';
+@import 'modules/filter_dropdown';
+@import 'modules/instantGame';
+
+@import 'temp/master';
+@import 'temp/inputs';
+@import 'temp/table-styles';
+
+@import 'helpers/print';
+@import 'helpers/text-only';

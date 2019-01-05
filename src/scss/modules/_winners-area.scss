@@ -1,0 +1,61 @@
+.winners-area {
+  border: 1px solid #e1e1e1;
+
+  .table-2 {
+    table {
+      border-collapse: collapse;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    th {
+      vertical-align: top;
+      text-align: left;
+      font-size: 14px;
+      line-height: 16px;
+      padding: 2px 2px 5px 5px;
+      border-bottom: 1px solid #bdbdbd;
+    }
+
+    td {
+      padding: 2px 2px 5px 5px;
+      border-top: 1px solid #f8f5f5;
+      border-bottom: 1px solid #bdbdbd;
+    }
+
+    @media (min-width: 1020px) {
+      th {
+        padding: 0 0 12px 13px;
+      }
+
+      td {
+        padding: 2px 0 5px 13px;
+      }
+    }
+
+    em {
+      display: block;
+    }
+
+    .alt td {
+      background: #ccedbf;
+    }
+
+    @media (min-width: 1020px) {
+      .col-1 {
+        width: 166px;
+      }
+
+      .col-2 {
+        width: 198px;
+      }
+    }
+
+    .col-4 {
+      padding-right: 2px;
+    }
+  }
+}

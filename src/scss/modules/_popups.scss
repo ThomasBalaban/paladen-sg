@@ -1,0 +1,70 @@
+.popup-container {
+  max-width: 942px;
+  padding: 30px;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.popup-content {
+  line-height: 17px;
+  color: #4d4d4d;
+  background: #fff;
+  padding: 5px 6px;
+
+  @media (min-width: 768px) {
+    padding: 5px 6px 5px 41px;
+  }
+
+  header {
+    width: 100%;
+    padding: 0 0 18px;
+    overflow: hidden;
+    position: relative;
+    h2 {
+      margin: 0;
+      padding: 38px 40px 0 0;
+      font-size: 20px;
+      line-height: 23px;
+      font-weight: normal;
+      color: #568a42;
+      float: left;
+    }
+  }
+  .close {
+    width: 19px;
+    height: 19px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-indent: -9999px;
+    direction: ltr;
+    background: url(https://www.palottery.state.pa.us/App_Themes/PALotteryAll/images/sprite-icons.png) no-repeat -281px -177px;
+  }
+}
+
+.enter-numbers-popup {
+  padding-left: 23px;
+  header {
+    padding-bottom: 4px;
+    h2 {
+      padding-top: 30px;
+    }
+  }
+}
+
+.calculator-popup {
+  padding-left: 22px;
+  header {
+    padding-bottom: 2px;
+    h2 {
+      padding-top: 15px;
+    }
+  }
+}
+
+.popup-holder {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+}

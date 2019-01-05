@@ -1,0 +1,47 @@
+// Chart
+//
+// Styles for prizes and chances data tables.
+//
+// Markup: ../components/chart.html
+//
+// Style guide: Components.chart
+
+.chart {
+  margin: 0 auto 0.625rem;
+  border-collapse: collapse;
+  font-weight: 700;
+  text-align: middle;
+  width: 98%;
+
+  th {
+    padding: 0.8rem;
+    background: $table-heading-background-color;
+    color: #fff;
+    border-left: 1px solid $table-heading-background-color;
+    border-right: 1px solid $table-heading-background-color;
+    text-transform: uppercase;
+  }
+
+  td {
+    padding: 0.8rem;
+    border-left: 1px solid $table-border-color;
+    border-right: 1px solid $table-border-color;
+    border-collapse: collapse;
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid $table-border-color;
+
+      &:nth-child(even) {
+        background-color: $table-alt-row-background-color;
+      }
+    }
+  }
+
+  tfoot td {
+    font-weight: 500;
+    background-color: $table-heading-background-color;
+    color: #fff;
+  }
+}

@@ -1,0 +1,422 @@
+// * { box-sizing: border-box; }
+// Want to get border-box in there soon, but it's going to wreck everything.
+
+body {
+  background: #fff url(https://www.palottery.state.pa.us/Custom/themes/fall/bg-body-day-fall.jpg) repeat-x;
+  margin: 0;
+  padding: 0;
+  font-family: $body-font-family;
+  font-size: 0.875rem;
+  line-height: 1;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: none;
+  position: relative;
+}
+
+.no-title { // lets the user remove headers from the children of a div example on onsert to remove empty h3 tag if user doesn't enter the title
+  h1, h2, h3, h4, h5, h6 {
+      display: none;
+  }
+}
+
+// global flex classes 
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.row {
+  flex-flow: row wrap;
+}
+
+.row-nowrap {
+  flex-flow: row nowrap;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.around {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+// Used for show / hide various children of parents based upon parent classes
+// Examples may be found on activeGame_li
+
+// Second Chance Icon
+.second-chance{ 
+  display: none;    
+  align-items: center;
+  text-align: left;
+}
+
+.second-chance-on {
+  .second-chance {
+      display: inline-block;
+  }
+}
+
+
+// Closing Soon Icon
+.closing-soon {
+  display: none;
+}
+
+.csi {
+  .closing-soon {
+      display: inline-block;
+
+      @include respond(desktop){
+          &:hover {
+              .hover-tooltip {
+                  display: inline-block;
+              }
+          }
+      }
+  }
+}
+
+// Used to display 'new' in a green box (looks similar to a ribbon)
+// Example on activeGame_li 
+
+.new-tag {
+  display: none;
+  width: 51px;
+  background: $dark-green;
+  padding: 5px 0;
+  font-style: italic;
+  text-align: center;
+  color: #fff;
+  line-height: 1;
+
+  @media (min-width: 769px) {
+      position: relative;
+      left: -15px;
+
+      &::before {
+          content: '';
+          border-style: solid;
+          border-width: 0 0 10px 15px;
+          border-color: transparent transparent #003811 transparent;
+          position: absolute;
+          top: -10px;
+          left: 0;
+      }
+  }
+}
+
+.new {
+  .new-tag {
+      display: inline-block;
+      font-size: 14px;
+  }
+}
+
+// Used for tool tip popup that may describe object below it. Was built with only one use case in mind may need extended
+// Example may be found on activeGame_li by hovering over the icons
+
+.hover-tooltip {
+  display: none;
+  position: absolute;
+  background: #f7f7f7;
+  box-shadow: 0 6px 12px 3px rgba(0, 0, 0, 0.4);
+  transform: translateX(-50%);
+  left: 16px;
+  top: -48px;
+  color: $dark-gray;
+  text-align: center;
+  font-size: 14px; // 
+  line-height: 1.2;
+
+  span {
+      display: block;
+      white-space: nowrap;
+      padding: 10px 25px;
+      font-weight: 700;
+
+      > span { // Incase special styles need applied to something within the span
+          padding: 0;
+          display: inline;
+      }
+  }
+
+  &:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 8px 0 8px;
+      border-color: #f7f7f7 transparent transparent transparent;
+      position: absolute;
+      transform: translateX(-50%);
+      top: 36px;
+      left: 50%;
+  }
+}
+
+.red {
+  &.text {
+      color: $red;
+  }
+}
+
+.md-color-white {
+  color: #fff;
+}
+
+.md-color-green {
+  color: $green;
+}
+
+#btn_menu_mobile {
+  display: none
+}
+
+.main-wrapper {
+  max-width: 62.5rem;
+  margin: 0 auto;
+}
+
+.skip a {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+}
+
+.accessible-text {
+  position: absolute;
+  left: -99999rem;
+  height: 1px;
+  width: 1px;
+}
+
+.small {
+  font-size: 75%;
+}
+
+.smaller {
+  font-size: 50%;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.flex-header {
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+
+  @media (max-width: 767px) {
+    flex-flow: column;
+    margin-bottom: 2rem;
+
+    a {
+      font-size: 1rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    img {
+      margin-right: 3rem;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $link-text-color;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.cap {
+  text-transform: uppercase;
+}
+
+img {
+  border-style: none;
+}
+
+.page {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+.fullwidth-keep-ratio {
+  width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 1019px) {
+  .mobilewidth {
+    width: 90%;
+  }
+}
+
+.mobile-only {
+  display: inline-block;
+}
+
+.desktop-only,
+.desktop-tablet-only,
+.tablet-only {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-tablet-only {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mobile-tablet-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tablet-only:not(.searchlink) {
+    display: block;
+    // Could not edit the CMS webpart to remove the .searchlink element, so
+    // have to add some hacky CSS.
+  }
+}
+
+main {
+  background-color: #fff;
+  box-shadow: 0 -1px 10px rgba(4, 98, 112, 0.46);
+  position: relative;
+
+  .night & {
+    background: #fff;
+  }
+}
+
+.content-area {
+  padding: 0 10px;
+  background: #fff;
+  position: relative;
+
+  @media (min-width: 1020px) {
+    padding: 0 29px 0 27px;
+  }
+
+  .feature-ribbon {
+    position: absolute;
+
+    @media (max-width: 1019px) {
+      display: none;
+    }
+  }
+
+  .feature-ribbon-0 {
+    left: 109px;
+    top: 11px;
+  }
+
+  .feature-ribbon-1 {
+    left: 398px;
+    top: -14px;
+  }
+
+  .feature-ribbon-2 {
+    left: 715px;
+    top: 7px;
+  }
+
+  h1 {
+    margin: 20px 0 12px 10px;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: $heading-color;
+
+    @media (min-width: 768px) {
+      margin: 0 0 27px 0;
+    }
+  }
+
+  .title {
+    @media (max-width: 1019px) {
+      margin: 0 0 60px;
+    }
+
+    @media (max-width: 767px) {
+      margin: 0 0 13px 15px;
+    }
+  }
+
+  .title-alt {
+    margin-bottom: 10px;
+
+    @media (min-width: 1020px) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.point {
+  color: black;
+}
+
+@media (min-width: 1020px) {
+  .link-sce {
+    background: url(https://www.palottery.state.pa.us/PaLotteryWebSite/media/Misc/Logos/Second-Chance-Logo.png) 0 -20px no-repeat;
+    background-size: cover;
+    display: block;
+    direction: ltr;
+    height: 30px;
+    text-indent: -9999px;
+    width: 170px;
+  }
+}

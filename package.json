@@ -1,0 +1,36 @@
+{
+  "name": "pa-lottery-style-guide",
+  "version": "1.0.0",
+  "description": "Style guide for palottery.com",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-js": "webpack",
+    "build-styles": "gulp buildStyles",
+    "build-comp": "./node_modules/.bin/kss --config kss-config.json",
+    "build-kss": "npm run build-comp && npm run build-styles && npm run build-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://paladen@bitbucket.org/neighborlyneedname/styleguide.git"
+  },
+  "author": "Team A",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-run": "^1.7.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "kss": "^3.0.0-beta.23",
+    "npm-run": "^5.0.1",
+    "path": "^0.12.7",
+    "webpack": "^4.18.0",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

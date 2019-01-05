@@ -1,0 +1,19 @@
+#footer {
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: bold;
+  color: #595959;
+  padding: 13px 0 30px 16px;
+}
+#footer p {
+  margin: 0 0 13px;
+}
+
+@media only screen and (max-width:767px), screen and (device-width: 320px) {
+  #footer {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    padding-left: 10px;
+  }
+}

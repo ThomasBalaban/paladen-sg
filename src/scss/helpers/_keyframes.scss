@@ -1,0 +1,11 @@
+/* Keyframes for any animations we will be using that should be repeated here. Our css can use these for animations and set their own times */
+
+@keyframes fadeout {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes fadein {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}

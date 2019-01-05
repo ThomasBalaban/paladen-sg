@@ -1,0 +1,205 @@
+.promo-area {
+  height: 1%;
+  padding: 37px 0 50px 4px
+}
+
+.promo-area .promo-box {
+  float: left;
+  border: 5px solid #e3e3e3;
+  margin: 0 12px 0 0
+}
+
+.promo-area .promo-box img {
+  vertical-align: top
+}
+
+.promo-area .slides {
+  position: relative;
+  width: 600px;
+  padding: 0 22px 0 19px;
+  float: right;
+  margin: 0 -10px 0 0
+}
+
+.promo-area .slides img {
+  vertical-align: top
+}
+
+.promo-area .slides .frame {
+  width: 590px;
+  height: 233px;
+  position: relative;
+  overflow: hidden;
+  border: 5px solid #e3e3e3
+}
+
+.promo-area .slides .frame ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 99999px
+}
+
+.promo-area .slides .frame li {
+  float: left;
+  width: 590px;
+  height: 233px
+}
+
+.promo-area .slides .frame li a {
+  display: block;
+  height: 233px
+}
+
+.promo-area .slides .btn-prev,
+.promo-area .slides .btn-next {
+  position: absolute;
+  text-indent: -9999px;
+  direction: ltr;
+  overflow: hidden;
+  width: 22px;
+  height: 38px;
+  background: url(https://www.palottery.state.pa.us/App_Themes/PALotteryAll/images/arrow-17.png) no-repeat;
+  top: 101px;
+  text-align: left
+}
+
+.promo-area .slides .btn-prev {
+  left: 0
+}
+
+.promo-area .slides .btn-next {
+  right: 0;
+  background-position: 0 100%
+}
+
+.promo-area .slides .note {
+  display: block;
+  text-align: right;
+  font-size: 14px;
+  line-height: 20px;
+  color: #5e5e5e;
+  padding: 2px 8px
+}
+
+.promo-area .slides .pagination {
+  display: none
+}
+
+@media only screen and (max-width:1019px) {
+  .promo-area {
+    position: relative;
+    margin: 15px -9px 40px -5px;
+    padding: 0
+  }
+  .promo-area .promo-box {
+    width: 225px;
+    margin: 0 2px 0 0
+  }
+  .promo-area .promo-box img {
+    width: 100%;
+    height: auto
+  }
+  .promo-area .slides {
+    float: right;
+    width: 477px;
+    padding: 0 15px;
+    margin: 0;
+  }
+  .promo-area .slides .frame {
+    width: 465px;
+    height: 184px;
+  }
+  .promo-area .slides .frame li {
+    background-size: contain;
+    width: 465px;
+    height: 184px;
+  }
+  .promo-area .slides .frame li img {
+    width: 100%;
+    height: auto;
+  }
+  .promo-area .slides .btn-prev,
+  .promo-area .slides .btn-next {
+    width: 17px;
+    height: 30px;
+    background-size: 100%;
+  }
+  .promo-area .slides .note {
+    font-size: 11px;
+  }
+  .promo-area .slides .btn-prev,
+  .promo-area .slides .btn-next {
+    top: 84px;
+  }
+}
+
+@media only screen and (max-width:767px),
+screen and (device-width: 320px) {
+  .promo-area .slides {
+    float: none;
+    padding: 5px 5px 52px;
+    margin: 0 auto;
+    width: 457px;
+  }
+  .promo-area .promo-box {
+    float: none;
+    margin: 0 auto;
+    width: 290px;
+  }
+  .promo-area .slides .frame {
+    border-width: 1px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    width: 455px;
+    height: 180px;
+  }
+  .promo-area .slides .frame li {
+    width: 455px;
+    height: 180px;
+  }
+  .promo-area .slides .note,
+  .promo-area .slides .btn-prev,
+  .promo-area .slides .btn-next {
+    display: none;
+  }
+  .promo-area .pagination {
+    position: absolute;
+    width: 100%;
+    bottom: 34px;
+    left: 0;
+    text-align: center;
+  }
+  .promo-area .pagination ul {
+    padding-right: 4px;
+  }
+}
+
+.promo-area .pagination li {
+  padding: 0 5px 0 4px;
+}
+
+.promo-area .pagination a {
+  display: block;
+  width: 13px;
+  height: 13px;
+  text-indent: -9999px;
+  direction: ltr;
+  overflow: hidden;
+  background: #e5e5e5;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) inset;
+  border-radius: 6px;
+}
+
+.promo-area .pagination a:hover,
+.promo-area .pagination .active a {
+  background: #4e4e4e;
+}
+
+.promo-area {
+  text-align: center;
+}
+.promo-area .slides {
+  float: none;
+  margin: 0 auto;
+}

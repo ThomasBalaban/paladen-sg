@@ -1,0 +1,128 @@
+.nav-mobile {
+  background: $nav-mobile-background;
+  line-height: 4.2;
+  text-align: center;
+  position: relative;
+  border-top: solid 1px $nav-border-color;
+  border-bottom: solid 1px $nav-border-color;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  .lnk-ilottery {
+    flex-basis: 33%;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    font-weight: 600;
+    flex-basis: 33%;
+    display: block;
+    box-sizing: border-box;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.nav-mobile-link {
+  color: $nav-mobile-links;
+  flex-basis: 33%;
+
+  i {
+    font-weight: 600;
+    transform: rotate(0deg);
+    transition: 0.2s transform linear;
+  }
+
+  &:not(:last-child) {
+    border-right: solid 2px $subnav-mobile-border;
+  }
+}
+
+.subnav-mobile {
+  background: $subnav-mobile-background;
+  display: none;
+  position: absolute;
+  bottom: -415px;
+  left: 0;
+  right: 0;
+  top: 49px;
+  text-align: left;
+  overflow: scroll;
+  z-index: 100;
+
+  a {
+    border-bottom: solid 1px $subnav-mobile-border;
+    color: $nav-mobile-links;
+    padding: 0.5rem;
+    display: block;
+  }
+
+  i {
+    font-weight: 600;
+    transform: rotate(0deg);
+    transition: 0.2s transform linear;
+  }
+}
+
+.subnav-mobile-active {
+  &.nav-mobile-link {
+    background-color: $nav-mobile-active-background;
+  }
+
+  i {
+    transform: rotate(90deg);
+    transition: 0.2s transform linear;
+  }
+}
+
+.subnav-mobile-level-1 {
+  background: $subnav-mobile-background;
+}
+
+.subnav-mobile-level-2 {
+  background: $subnav-mobile-2-background;
+  box-shadow: inset 1px -5px 22px rgba(0,0,0,0.25);
+  display: none;
+
+  a {
+    border-bottom-color: $subnav-mobile-2-border;
+    padding-left: 1.5rem;
+  }
+}
+
+.subnav-open {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+@media only screen and (max-width: 767px),
+screen and (device-width: 320px) {
+  .stick {
+    margin-top: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    width: 100%;
+  }
+
+  #sticky.stick {
+    margin-top: 0;
+  }
+}
+
+#sticky-anchor {
+  height: 0;
+}
+

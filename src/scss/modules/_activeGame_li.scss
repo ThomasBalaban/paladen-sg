@@ -1,0 +1,105 @@
+// activeGame_li
+//
+// PA Lottery Active Game List Object for the Scratch-Off Revamp
+//
+// Markup: ../components/activeGame_li.hbs
+//
+// **Requires activeGame-li.js to look its best for all screen sizes**
+//
+// **Used Javascript to place the image properly in porportion to the text to get the best effect across browsers with image placement next to the p tag when the p tag word wraps.**
+//
+// **Can have any mix of the below 3 classes**
+//
+// .second-chance-on - Makes Second Chance Image show (adopted from onsert)
+// .csi - Makes Closing Soon Image show
+// .new - Makes New Tag show
+//
+// Style guide: Components.activeGame_li
+
+.activeGame_li {
+    background: $green;
+    color: #ffffff;
+    padding: 14px 0;
+    margin: 2px 0;
+
+    p {
+        font-weight: bold;
+        font-size: 18px;
+        display: inline;
+        margin: 0; // Resetting base styles
+        line-height: 1; // Resetting base styles
+        padding: 0; // Resetting base styles
+    }
+
+    a {
+        color: #ffffff;
+    }
+
+    .info {
+        width: 60%;
+        position: relative;
+        margin-left: 10px;
+    }
+
+    .image {
+        width: 60px;
+        transform: translate(-50%,-50%);
+        top: 50%; // transform and top sets the image in the absolute center of the green box
+        left: 120%; // Adds space on the left of the image position for JS disabled users
+        position: absolute;
+
+        @media (min-width: 769px) {
+            width: 80px;
+            margin-left: 10px;
+        }
+
+        & > div {
+            position: relative;
+        }
+    }
+
+    img {
+        margin: 0 2px;
+        width: 24px;
+        
+        @media (min-width: 769px) {
+            width: 30px;
+        }
+    }
+
+    .price {
+        margin-left: auto;
+        i {
+            margin: 0 5px 0 10px;
+        }
+    }
+
+    &.new {
+        padding: 12px 0; // over classified due to the padding that new tag adds
+
+        .info {
+            @media (min-width: 769px) {
+                margin-left: -8px;
+            }
+        }
+
+        @media (min-width: 769px) {
+            padding: 11px 0;
+        }
+    }
+
+    .second-chance {
+        @include respond(desktop){
+            &:hover {
+                .hover-tooltip {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 769px) {
+        margin: 2px 0;
+        padding: 14px 0;
+    }
+}

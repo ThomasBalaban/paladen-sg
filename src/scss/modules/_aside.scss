@@ -1,0 +1,61 @@
+.aside {
+  overflow: hidden;
+  padding: 5px 0 0;
+
+  @media (min-width: 1020px) {
+    padding: 0 0 0 10px;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.67;
+    color: #4d4d4d;
+    text-transform: uppercase;
+
+    @media only screen and (max-width:767px) {
+      display: none;
+    }
+  }
+
+  .video {
+    margin: 0 0 24px 2px;
+  }
+
+  .promo-vip {
+    margin: 0 0 25px;
+
+    a {
+      display: block;
+      color: #fff;
+      margin: 0 auto;
+      background: url(https://www.palottery.state.pa.us/App_Themes/PALotteryAll/images/bg-vip-promo.png) no-repeat;
+      overflow: hidden;
+      padding: 32px 20px 0 94px;
+      height: 57px;
+      max-width: 333px;
+      font-size: 19px;
+      line-height: 1.21;
+
+      @media (min-width: 768px) {
+        width: 189px;
+        padding-top: 18px;
+        margin: 0;
+      }
+
+      @media (min-width: 1020px) {
+        height: 71px;
+      }
+    }
+  }
+
+  .promo {
+    margin: 0 auto 30px;
+    width: 449px;
+    border: 5px solid #a5a5a5;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,1019 @@
+.slide-show {
+  position: relative;
+  padding-top: 2%;
+  margin-bottom: 2%;
+}
+.slide-show .frame {
+  width: 931px;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slide-show .frame li {
+  width: 931px;
+  height: 220px;
+  float: left;
+  background: no-repeat;
+  padding: 0
+}
+.slide-show .frame li a {
+  display: block;
+  height: 220px
+}
+#slide-show-winners {
+  width: 669px
+}
+#slide-show-winners .frame {
+  overflow: hidden;
+  width: 659px
+}
+#slide-show-winners .frame li {
+  height: 188px;
+  overflow: hidden;
+  padding: 2px;
+  margin: 0;
+  width: 655px
+}
+#slide-show-winners .frame li h2 {
+  color: $heading-color;
+  font-weight: normal;
+  margin: 10px 0 6px 0;
+  width: auto
+}
+#slide-show-winners .frame li p {
+  font-size: 12px;
+  margin: 0 0 19px 10px
+}
+#slide-show-winners .frame li a {
+  display: inline;
+}
+#slide-show-winners .pagination {
+  bottom: -30px
+}
+#slide-show-winners .prev, #slide-show-winners .next {
+  top: 80px
+}
+.slide-show .frame ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 99999px;
+  overflow: hidden
+}
+.slide-show .frame .logo-section {
+  float: left;
+  padding: 0 10px 0 0
+}
+.slide-show .frame .info {
+  overflow: hidden;
+  text-align: center;
+  padding: 30px 4px 0 0
+}
+.slide-show .frame .info .btn-play {
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #c0e3f5;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: bold;
+  background: linear-gradient(to bottom, rgba(234, 27, 45, 1) 0, rgba(232, 26, 46, 1) 9%, rgba(227, 26, 45, 1) 15%, rgba(224, 25, 44, 1) 16%, rgba(222, 25, 43, 1) 22%, rgba(218, 25, 42, 1) 23%, rgba(216, 25, 43, 1) 26%, rgba(212, 24, 41, 1) 26%, rgba(213, 25, 42, 1) 29%, rgba(211, 25, 39, 1) 30%, rgba(207, 24, 42, 1) 35%, rgba(199, 22, 38, 1) 42%, rgba(199, 24, 39, 1) 45%, rgba(195, 23, 37, 1) 46%, rgba(193, 22, 38, 1) 51%, rgba(189, 21, 36, 1) 53%, rgba(187, 22, 38, 1) 58%, rgba(181, 20, 36, 1) 66%, rgba(178, 22, 36, 1) 68%, rgba(178, 22, 36, 1) 100%);
+  padding: 5px 5px 5px 6px;
+  min-width: 190px;
+  text-shadow: 0 0 3px #8a101b
+}
+.slide-show .pagination {
+  position: absolute;
+  bottom: -19px;
+  left: 0;
+  width: 100%;
+  text-align: center
+}
+
+.slide-show .pagination li {
+  padding: 0 3px 0 5px
+}
+.slide-show .pagination a {
+  display: block;
+  text-indent: -9999px;
+  direction: ltr;
+  overflow: hidden;
+  width: 13px;
+  height: 13px;
+  background: #c9c9c9;
+  border-radius: 7px;
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) inset;
+}
+.slide-show .pagination .active a,
+.slide-show .pagination a:hover {
+  background: #4e4e4e
+}
+.container .slide-show {
+  margin: 0 20px 21px 18px;
+  box-shadow: none;
+}
+.container .slide-show .frame {
+  width: 911px
+}
+.container .slide-show .prev,
+.container .slide-show .next {
+  top: 99px
+}
+.container .slide-show .prev {
+  left: -25px
+}
+.container .slide-show .next {
+  right: -22px
+}
+.container .slide-show .frame li {
+  width: 911px;
+  padding: 0;
+  height: auto
+}
+.container .slide-show .pagination {
+  bottom: -22px
+}
+.container .slide-show .frame li .visual {
+  float: left;
+  padding: 0 10px 0 2px
+}
+.container .slide-show .frame .logo-section {
+  padding: 20px
+}
+.container .slide-show .frame li img {
+  vertical-align: top
+}
+.container .slide-show .frame li .info {
+  padding: 58px 22px 10px 0
+}
+.slide-show .frame li.yellow-area .holder {
+  background: linear-gradient(to bottom, rgba(254, 237, 61, 1) 0, rgba(253, 225, 56, 1) 14%, rgba(252, 223, 59, 1) 15%, rgba(254, 223, 57, 1) 15%, rgba(253, 220, 55, 1) 18%, rgba(253, 220, 57, 1) 19%, rgba(251, 206, 51, 1) 29%, rgba(252, 202, 53, 1) 33%, rgba(249, 191, 48, 1) 41%, rgba(251, 183, 48, 1) 47%, rgba(247, 177, 45, 1) 52%, rgba(250, 175, 47, 1) 54%, rgba(248, 174, 43, 1) 54%, rgba(250, 168, 43, 1) 59%, rgba(248, 166, 41, 1) 60%, rgba(250, 166, 42, 1) 60%, rgba(248, 164, 40, 1) 60%, rgba(248, 157, 42, 1) 67%, rgba(246, 155, 40, 1) 68%, rgba(248, 150, 39, 1) 72%, rgba(245, 147, 36, 1) 75%, rgba(247, 146, 38, 1) 75%, rgba(246, 146, 35, 1) 76%, rgba(246, 143, 38, 1) 79%, rgba(247, 142, 35, 1) 79%, rgba(243, 122, 31, 1) 100%);
+}
+.slide-show .btn-more {
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #fbcf96;
+  border-radius: 3px 3px 0 0;
+  background: linear-gradient(to bottom, rgba(0, 172, 238, 1) 0, rgba(2, 168, 230, 1) 12%, rgba(1, 166, 224, 1) 13%, rgba(2, 165, 222, 1) 13%, rgba(1, 166, 224, 1) 15%, rgba(4, 164, 224, 1) 16%, rgba(2, 160, 221, 1) 16%, rgba(3, 162, 220, 1) 18%, rgba(6, 159, 216, 1) 21%, rgba(5, 160, 217, 1) 22%, rgba(6, 157, 212, 1) 22%, rgba(6, 157, 212, 1) 25%, rgba(6, 153, 207, 1) 26%, rgba(7, 154, 208, 1) 28%, rgba(8, 153, 206, 1) 28%, rgba(6, 150, 202, 1) 29%, rgba(7, 151, 203, 1) 32%, rgba(9, 150, 203, 1) 32%, rgba(8, 148, 199, 1) 32%, rgba(8, 148, 199, 1) 35%, rgba(11, 146, 194, 1) 36%, rgba(9, 147, 196, 1) 37%, rgba(11, 146, 193, 1) 38%, rgba(10, 143, 188, 1) 39%, rgba(11, 142, 188, 1) 41%, rgba(14, 142, 189, 1) 42%, rgba(13, 140, 185, 1) 42%, rgba(12, 140, 185, 1) 43%, rgba(14, 139, 183, 1) 43%, rgba(13, 140, 185, 1) 45%, rgba(14, 137, 179, 1) 45%, rgba(14, 137, 178, 1) 48%, rgba(17, 134, 177, 1) 49%, rgba(16, 135, 177, 1) 51%, rgba(15, 133, 173, 1) 52%, rgba(18, 131, 173, 1) 52%, rgba(16, 132, 173, 1) 55%, rgba(17, 131, 168, 1) 55%, rgba(17, 131, 168, 1) 58%, rgba(18, 130, 168, 1) 58%, rgba(16, 128, 165, 1) 58%, rgba(19, 127, 165, 1) 59%, rgba(18, 128, 165, 1) 61%, rgba(18, 126, 162, 1) 62%, rgba(18, 128, 163, 1) 64%, rgba(19, 126, 162, 1) 65%, rgba(19, 123, 158, 1) 65%, rgba(18, 123, 155, 1) 71%, rgba(19, 122, 155, 1) 100%);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 21px;
+  min-width: 190px;
+  font-weight: bold;
+  padding: 5px 5px 5px 6px;
+  box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.5);
+  margin: 0 0 0 6px;
+  text-shadow: 0 0 3px #0d2b5c
+}
+.slide-show-vip {
+  position: relative;
+  width: 669px;
+  padding: 0 22px 45px 23px
+}
+.slide-show-vip .frame {
+  border: 5px solid #568a42;
+  width: 659px;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  height: 233px;
+  margin: 0;
+  padding: 0
+}
+.slide-show-vip .frame ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 99999px;
+  height: 233px
+}
+#page-content .slide-show-vip .frame li {
+  float: left;
+  height: 233px;
+  width: 659px;
+  margin: 0;
+  position: relative;
+}
+.slide-show-vip .frame li a {
+  display: block;
+  height: 233px;
+  margin: 0
+}
+.container .slide-show-vip .frame li .info p {
+  margin-bottom: 20px
+}
+.container .slide-show-vip .frame li .info a {
+  color: #fff;
+  text-decoration: underline
+}
+.container .slide-show-vip .frame li .info a:hover {
+  text-decoration: underline
+}
+.container .slide-show-vip .next, .container .slide-show-vip .prev {
+  position: absolute;
+  top: 101px;
+  background: url(https://www.palottery.state.pa.us/App_Themes/PALotteryAll/images/arrow-23.png) no-repeat;
+  width: 22px;
+  height: 38px;
+  text-indent: -9999px;
+  direction: ltr;
+  overflow: hidden
+}
+.container .slide-show-vip .prev {
+  left: 2px
+}
+.container .slide-show-vip .next {
+  background-position: 0 -50px;
+  right: 0
+}
+
+@media only screen and (max-width:1019px) {
+  .slide-show {
+    border-width: 5px 5px 18px;
+    margin: 0 auto;
+    width: 707px
+  }
+  .slide-show .frame {
+    width: 707px;
+    height: 169px
+  }
+  .slide-show .frame li {
+    height: 169px;
+    width: 707px;
+    padding: 0;
+    background-size: 707px 169px
+  }
+  .slide-show .frame ul img {
+    vertical-align: top;
+    width: 234px;
+    height: 129px
+  }
+  .slide-show .frame .info {
+    padding: 23px 50px 0 0
+  }
+  .slide-show .frame .info .btn-more, .slide-show .frame .info .btn-play {
+    font-size: 13px;
+    line-height: 15px;
+    padding: 4px 5px 4px 6px;
+    min-width: 140px
+  }
+  .slide-show .pagination {
+    bottom: -18px
+  }
+  .slide-show .pagination li {
+    padding: 0 3px
+  }
+  .slide-show .pagination a {
+    width: 10px;
+    height: 10px
+  }
+  .slide-show .prev, .slide-show .next {
+    position: absolute;
+    bottom: 175px;
+    width: 17px;
+    height: 29px;
+    background-size: 39px;
+  }
+  .slide-show .prev {
+    left: -20px
+  }
+  .slide-show .next {
+    background-position: -22px 0;
+    right: -20px
+  }
+  .container .slide-show {
+    margin: 0 auto 30px
+  }
+  .container .slide-show .prev, .container .slide-show .next {
+    top: 75px
+  }
+  .container .slide-show-instant-games .prev, .container .slide-show-instant-games .next {
+    top: 40px
+  }
+  .container .slide-show .prev {
+    left: -21px
+  }
+  .container .slide-show .next {
+    right: -20px
+  }
+  .container .slide-show .frame {
+    width: 707px
+  }
+  .container .slide-show .frame li {
+    width: 707px
+  }
+  .slide-show .frame li {
+    background-size: 707px 169px
+  }
+  .slide-show .frame li a {
+    height: 169px
+  }
+  .container .slide-show .frame ul img {
+    width: auto;
+    height: auto;
+  }
+  #page-content .slide-show-vip {
+    width: 440px;
+    margin: 0 auto;
+  }
+  #page-content .slide-show-vip .frame li, #page-content .slide-show-vip .frame {
+    width: 430px
+  }
+  #page-content .slide-show-vip .frame {
+    height: 150px
+  }
+  #page-content .slide-show-vip .frame li {
+    background-size: 430px;
+    margin: 0;
+    height: 150px
+  }
+  #page-content .slide-show-vip .frame li a {
+    margin: 0;
+    height: 150px
+  }
+  .container .slide-show-vip .next, .container .slide-show-vip .prev {
+    top: 58px
+  }
+}
+
+@media only screen and (max-width:767px) {
+  #instant-games-content .container .slide-show .frame {
+    height: 140px;
+  }
+  #instant-games-content .container .slide-show .frame ul {
+    height: 142px;
+  }
+  #instant-games-content .container .slide-show .frame li {
+    height: 139px;
+  }
+  .container .slide-show-instant-games .prev, .container .slide-show-instant-games .next {
+    display: block;
+    top: 60px;
+  }
+  .slide-show {
+    border-width: 8px 20px 19px;
+    width: 438px;
+    margin: 0 auto;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .slide-show .frame {
+    height: 109px;
+    width: 437px;
+    border-right: 1px solid #487fbf
+  }
+  .slide-show .frame ul {
+    height: 109px;
+    margin: 0;
+    padding: 0
+  }
+  .slide-show .frame li {
+    width: 437px;
+    padding: 0;
+    height: 109px;
+    background-size: 437px 109px;
+    margin: 0
+  }
+  .slide-show .frame li a {
+    height: 109px;
+    margin: 0;
+    padding: 0
+  }
+  .slide-show .frame .logo-section {
+    padding-right: 5px
+  }
+  .slide-show .frame .info {
+    padding: 16px 0 0
+  }
+  .slide-show .next, .slide-show .prev {
+    width: 18px;
+    height: 26px;
+    background-size: 100%;
+    top: 46px
+  }
+  .slide-show .next {
+    background-position: 100% 100%
+  }
+  .container .slide-show .frame li, .container .slide-show .frame {
+    width: 438px;
+    border: 0
+  }
+  .container .slide-show .frame li .info {
+    display: none;
+    text-align: center
+  }
+  .container .slide-show .frame .logo-section {
+    padding: 20px 0;
+    width: 100%;
+    text-align: center
+  }
+  .container .slide-show .frame li .visual {
+    padding: 0;
+    float: none;
+    text-align: center
+  }
+}
+
+#instant-games-content .container .slide-show .frame {
+  width: 675px;
+}
+#instant-games-content .container .slide-show .frame li {
+  width: 675px;
+  position: relative;
+}
+
+@media only screen and (max-width:1019px) {
+  #instant-games-content .container .slide-show .frame {
+    width: 508px;
+  }
+  #instant-games-content .container .slide-show .frame li {
+    width: 508px;
+    background-size: contain;
+  }
+  #instant-games-content .slide-show {
+    width: 508px;
+  }
+  .container .slide-show .next, .container .slide-show .prev {
+    display: none;
+  }
+}
+
+@media screen and (max-width:767px) {
+  #instant-games-content .slide-show {
+    width: 438px;
+  }
+  #instant-games-content .container .slide-show .frame {
+    width: 437px;
+  }
+  #instant-games-content .container .slide-show .frame li {
+    width: 437px;
+  }
+  .slide-show-vip .frame li, .slide-show-vip .frame {
+    width: 410px
+  }
+  #page-content .slide-show-vip {
+    width: 420px;
+    margin: 0 0 0 -15px
+  }
+  #page-content .slide-show-vip .prev {
+    left: 4px
+  }
+  #page-content .slide-show-vip .next {
+    right: -16px
+  }
+  .slide-show-area {
+    margin: 0 -28px
+  }
+
+}
+
+.slide-show .frame li {
+  position: relative;
+}
+#instant-games-content .container .slide-show .frame li .poolplay-panel-link {
+  right: 50px;
+  position: absolute;
+  top: 124px;
+  width: 118px;
+  display: none;
+}
+#page-content .slide-show-vip .frame li .poolplay-panel-link {
+  right: 12px;
+  position: absolute;
+  top: 97px;
+  width: 118px;
+  display: none;
+}
+
+.slide-show div.frame ul li.mraffle {
+  background-image: url(https://www.palottery.state.pa.us/App_Themes/PALotteryAll/images/raffle/br-mr-carousel-homepage.jpg)
+}
+.slides div.frame ul li.mraffle {
+  background-image: url(https://www.palottery.state.pa.us/App_Themes/PALotteryAll/images/raffle/br-mr-carousel-games.jpg)
+}
+.slide-show-vip div.frame ul li.mraffle {
+  background-image: url(https://www.palottery.state.pa.us/App_Themes/PALotteryAll/images/raffle/br-mr-carousel-vip.jpg)
+}
+.slide-show div.frame ul li.mraffle div {
+  font-size: 40px;
+  margin: 3% 0 0 40%
+}
+.slides div.frame ul li.mraffle div {
+  font-size: 30px;
+  margin: 7% 0 0 50%
+}
+.slide-show-vip div.frame ul li.mraffle div {
+  font-size: 30px;
+  margin: 5% 0 0 50%
+}
+@media only screen and (max-width:1019px) {
+  .slide-show div.frame ul li.mraffle div {
+    font-size: 30px
+  }
+  .slides div.frame ul li.mraffle div {
+    font-size: 24px
+  }
+  .slides div.frame ul li.mraffle div span.smaller {
+    font-size: 16px
+  }
+  .slide-show-vip div.frame ul li.mraffle div {
+    font-size: 24px
+  }
+  .slide-show-vip div.frame ul li.mraffle div span.smaller {
+    font-size: 16px
+  }
+}
+@media only screen and (max-width:767px) {
+  .slide-show div.frame ul li.mraffle div {
+    font-size: 16px
+  }
+  .slides div.frame ul li.mraffle div {
+    font-size: 16px
+  }
+  .slides div.frame ul li.mraffle div span.smaller {
+    font-size: 16px
+  }
+  .slide-show-vip div.frame ul li.mraffle div {
+    font-size: 16px
+  }
+  .slide-show-vip div.frame ul li.mraffle div span.smaller {
+    font-size: 16px
+  }
+}
+.slide-show div.frame ul li div.panel-amount {
+  font-size: 66px;
+  font-weight: bold;
+  margin: 0;
+  text-align: right;
+  line-height: normal;
+  padding-right: 40px;
+  height: 100px
+}
+.slide-show div.frame ul li div.panel-amount span {
+  font-size: 14px;
+  font-weight: normal;
+  display: block;
+}
+.slide-show div.frame ul li a:hover {
+  text-decoration: none
+}
+.slide-show div.frame ul li.panel-powerball {
+  background-image: url(/Custom/uploadedimages/jackpot-panels/powerball.jpg)
+}
+.slide-show div.frame ul li.panel-powerball div.panel-amount {
+  color: #fcde00;
+  margin: 38px 0 0 504px;
+  width: 400px
+}
+.slide-show div.frame ul li.panel-powerball div.panel-ppr {
+  color: #fcde00;
+  font-size: 12px;
+  margin: 44px 0 0 12px
+}
+.slide-show div.frame ul li.panel-megamillions {
+  background-image: url(/Custom/uploadedimages/jackpot-panels/megamillions.jpg)
+}
+.slide-show div.frame ul li.panel-megamillions div.panel-amount {
+  color: #fff;
+  margin: 45px 0 0 504px;
+  width: 400px;
+}
+.slide-show div.frame ul li.panel-megamillions div.panel-ppr {
+  color: #fff;
+  font-size: 12px;
+  margin: 44px 0 0 12px
+}
+.slide-show div.frame ul li.panel-match6 {
+  background-image: url(/Custom/uploadedimages/jackpot-panels/match6.jpg)
+}
+.slide-show div.frame ul li.panel-match6 div.panel-amount {
+  color: #fff;
+  margin: 45px 0 0 522px
+}
+.slide-show div.frame ul li.panel-cash5 {
+  background-image: url(/Custom/uploadedimages/jackpot-panels/cash5.jpg)
+}
+.slide-show div.frame ul li.panel-cash5 div.panel-amount {
+  color: #000;
+  margin: 55px 0 0 522px
+}
+.slide-show div.frame ul li.panel-treasurehunt {
+  background-image: url(/Custom/uploadedimages/jackpot-panels/treasurehunt.jpg)
+}
+.slide-show div.frame ul li.panel-treasurehunt div.panel-amount {
+  color: #fff;
+  margin: 55px 0 0 506px
+}
+@media only screen and (max-width:1019px) {
+  .slide-show div.frame ul li div.panel-amount {
+    font-size: 46px;
+    font-weight: bold;
+    margin: 0
+  }
+  .slide-show div.frame ul li.panel-powerball div.panel-amount {
+    margin: 55px 0 0 284px
+  }
+  .slide-show div.frame ul li.panel-powerball div.panel-ppr {
+    margin: -5px 0 0 12px
+  }
+  .slide-show div.frame ul li.panel-megamillions div.panel-amount {
+    margin: 55px 0 0 284px
+  }
+  .slide-show div.frame ul li.panel-megamillions div.panel-ppr {
+    margin: -5px 0 0 12px
+  }
+  .slide-show div.frame ul li.panel-match6 div.panel-amount {
+    margin: 55px 0 0 424px
+  }
+  .slide-show div.frame ul li.panel-cash5 div.panel-amount {
+    margin: 55px 0 0 424px
+  }
+  .slide-show div.frame ul li.panel-treasurehunt div.panel-amount {
+    margin: 55px 0 0 404px
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .slide-show div.frame ul li div.panel-amount {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 22px;
+    padding-right: 20px
+  }
+  .slide-show div.frame ul li div.panel-amount span {
+    font-size: 12px
+  }
+  .slide-show div.frame ul li.panel-powerball div.panel-amount {
+    margin: 40px 0 0 20px
+  }
+  .slide-show div.frame ul li.panel-powerball div.panel-ppr {
+    font-size: 11px;
+    margin: -44px 0 0 4px
+  }
+  .slide-show div.frame ul li.panel-megamillions div.panel-amount {
+    margin: 40px 0 0 20px
+  }
+  .slide-show div.frame ul li.panel-megamillions div.panel-ppr {
+    font-size: 11px;
+    margin: -44px 0 0 4px
+  }
+  .slide-show div.frame ul li.panel-match6 div.panel-amount {
+    margin: 40px 0 0 280px
+  }
+  .slide-show div.frame ul li.panel-cash5 div.panel-amount {
+    margin: 40px 0 0 280px
+  }
+  .slide-show div.frame ul li.panel-treasurehunt div.panel-amount {
+    margin: 40px 0 0 274px
+  }
+}
+.slide-show.slide-show-instant-games div.frame ul li div.panel-amount {
+  font-size: 41px;
+  font-weight: bold;
+  margin: 0;
+  text-align: right;
+  line-height: normal;
+  padding-right: 40px;
+  height: 100px
+}
+.slide-show.slide-show-instant-games div.frame ul li div.panel-amount span {
+  font-size: 14px;
+  font-weight: normal;
+  display: block;
+}
+.slide-show.slide-show-instant-games div.frame ul li a:hover {
+  text-decoration: none
+}
+.slide-show.slide-show-instant-games div.frame ul li.panel-powerball {
+  background-image: url(/Custom/uploadedimages/jackpot-panels/powerball.jpg);
+  background-size: contain;
+  background-color: #000;
+  background-position: left 10%;
+}
+.slide-show.slide-show-instant-games div.frame ul li.panel-powerball div.panel-amount {
+  color: #fcde00;
+  margin: 56px 0 0 220px;
+  width: 400px
+}
+.slide-show.slide-show-instant-games div.frame ul li.panel-powerball div.panel-ppr {
+  color: #fcde00;
+  font-size: 12px;
+  margin: 44px 0 0 12px
+}
+.slide-show.slide-show-instant-games div.frame ul li.panel-megamillions {
+  background-image: url(/Custom/uploadedimages/jackpot-panels/megamillions.jpg);
+  background-color: #5697d1;
+}
+.slide-show.slide-show-instant-games div.frame ul li.panel-megamillions div.panel-amount {
+  color: #fff;
+  margin: 45px 0 0 231px;
+  width: 400px;
+}
+.slide-show.slide-show-instant-games div.frame ul li.panel-megamillions div.panel-ppr {
+  color: #fff;
+  font-size: 12px;
+  margin: 44px 0 0 12px
+}
+.slide-show.slide-show-instant-games div.frame ul li.panel-match6 {
+  background-image: url(/Custom/uploadedimages/jackpot-panels/match6.jpg)
+}
+.slide-show.slide-show-instant-games div.frame ul li.panel-match6 div.panel-amount {
+  color: #fff;
+  margin: 45px 0 0 400px
+}
+.slide-show.slide-show-instant-games div.frame ul li.panel-cash5 {
+  background-image: url(/Custom/uploadedimages/jackpot-panels/cash5.jpg)
+}
+.slide-show.slide-show-instant-games div.frame ul li.panel-cash5 div.panel-amount {
+  color: #000;
+  margin: 55px 0 0 400px
+}
+.slide-show.slide-show-instant-games div.frame ul li.panel-treasurehunt {
+  background-image: url(/Custom/uploadedimages/jackpot-panels/treasurehunt.jpg)
+}
+.slide-show.slide-show-instant-games div.frame ul li.panel-treasurehunt div.panel-amount {
+  color: #fff;
+  margin: 55px 0 0 406px
+}
+@media only screen and (max-width:1019px) {
+  .slide-show.slide-show-instant-games div.frame ul li div.panel-amount {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-powerball div.panel-amount {
+    margin: 55px 0 0 80px
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-powerball div.panel-ppr {
+    margin: -5px 0 0 12px
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-megamillions {
+    background-position: center 25px;
+    background-color: #5697d1;
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-megamillions div.panel-amount {
+    margin: 55px 0 0 84px
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-megamillions div.panel-ppr {
+    margin: -5px 0 0 12px
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-match6 {
+    background-position: center 25px;
+    background-color: #cd295c;
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-match6 div.panel-amount {
+    margin: 55px 0 0 340px
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-cash5 {
+    background-position: center 25px;
+    background-color: #fff001;
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-cash5 div.panel-amount {
+    margin: 55px 0 0 340px
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-treasurehunt {
+    background-position: center 25px;
+    background-color: #da8204;
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-treasurehunt div.panel-amount {
+    margin: 55px 0 0 340px
+  }
+}
+@media only screen and (max-width:767px) {
+  .slide-show.slide-show-instant-games div.frame ul li {
+    background-size: cover;
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-powerball {
+    background-size: contain;
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-megamillions {
+    background-size: contain;
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-match6 {
+    background-size: contain;
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-cash5 {
+    background-size: contain;
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-treasurehunt {
+    background-size: contain;
+  }
+  .slide-show.slide-show-instant-games div.frame ul li div.panel-amount {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 22px;
+    padding-right: 20px
+  }
+  .slide-show.slide-show-instant-games div.frame ul li div.panel-amount span {
+    font-size: 12px
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-powerball div.panel-amount {
+    margin: 40px 0 0 26px
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-powerball div.panel-ppr {
+    font-size: 11px;
+    margin: -44px 0 0 4px
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-megamillions div.panel-amount {
+    margin: 40px 0 0 20px
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-megamillions div.panel-ppr {
+    font-size: 11px;
+    margin: -44px 0 0 4px
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-match6 div.panel-amount {
+    margin: 40px 0 0 280px
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-cash5 div.panel-amount {
+    margin: 40px 0 0 280px
+  }
+  .slide-show.slide-show-instant-games div.frame ul li.panel-treasurehunt div.panel-amount {
+    margin: 40px 0 0 274px
+  }
+}
+#page-content .slide-show-vip .frame li div.panel-amount {
+  font-size: 41px;
+  font-weight: bold;
+  margin: 0;
+  text-align: right;
+  line-height: normal;
+  padding-right: 40px;
+  height: 100px
+}
+#page-content .slide-show-vip .frame li div.panel-amount span {
+  font-size: 14px;
+  font-weight: normal;
+  display: block;
+}
+#page-content .slide-show-vip .frame li a:hover {
+  text-decoration: none
+}
+#page-content .slide-show-vip .frame li.panel-powerball {
+  background-image: url(/Custom/uploadedimages/jackpot-panels/powerball.jpg);
+  background-size: contain;
+  background-color: #000;
+  background-position: left 10%;
+  background-repeat: no-repeat;
+}
+#page-content .slide-show-vip .frame li.panel-powerball div.panel-amount {
+  color: #fcde00;
+  margin: 56px 0 0 220px;
+  width: 400px
+}
+#page-content .slide-show-vip .frame li.panel-powerball div.panel-ppr {
+  color: #fcde00;
+  font-size: 12px;
+  margin: 44px 0 0 12px
+}
+#page-content .slide-show-vip .frame li.panel-megamillions {
+  background-image: url(/Custom/uploadedimages/jackpot-panels/megamillions.jpg);
+  background-repeat: no-repeat;
+  background-color: #5697d1;
+}
+#page-content .slide-show-vip .frame li.panel-megamillions div.panel-amount {
+  color: #fff;
+  margin: 45px 0 0 231px;
+  width: 400px;
+}
+#page-content .slide-show-vip .frame li.panel-megamillions div.panel-ppr {
+  color: #fff;
+  font-size: 12px;
+  margin: 44px 0 0 12px
+}
+#page-content .slide-show-vip .frame li.panel-match6 {
+  background-image: url(/Custom/uploadedimages/jackpot-panels/match6.jpg);
+  background-repeat: no-repeat;
+  background-color: #cd295c;
+}
+#page-content .slide-show-vip .frame li.panel-match6 div.panel-amount {
+  color: #fff;
+  margin: 45px 0 0 400px
+}
+#page-content .slide-show-vip .frame li.panel-cash5 {
+  background-image: url(/Custom/uploadedimages/jackpot-panels/cash5.jpg);
+  background-repeat: no-repeat;
+  background-color: #fff001;
+}
+#page-content .slide-show-vip .frame li.panel-cash5 div.panel-amount {
+  color: #000;
+  margin: 55px 0 0 444px
+}
+#page-content .slide-show-vip .frame li.panel-treasurehunt {
+  background-image: url(/Custom/uploadedimages/jackpot-panels/treasurehunt.jpg);
+  background-repeat: no-repeat;
+  background-color: #da8204;
+}
+#page-content .slide-show-vip .frame li.panel-treasurehunt div.panel-amount {
+  color: #fff;
+  margin: 55px 0 0 406px
+}
+@media only screen and (max-width:1019px) {
+  #page-content .slide-show-vip .frame li div.panel-amount {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0
+  }
+  #page-content .slide-show-vip .frame li.panel-powerball div.panel-amount {
+    margin: 30px 0 0 0;
+  }
+  #page-content .slide-show-vip .frame li.panel-powerball div.panel-ppr {
+    margin: -5px 0 0 12px
+  }
+  #page-content .slide-show-vip .frame li.panel-megamillions {
+    background-position: center 25px;
+    background-color: #5697d1;
+  }
+  #page-content .slide-show-vip .frame li.panel-megamillions div.panel-amount {
+    margin: 30px 0 0 0;
+  }
+  #page-content .slide-show-vip .frame li.panel-megamillions div.panel-ppr {
+    margin: -5px 0 0 12px
+  }
+  #page-content .slide-show-vip .frame li.panel-match6 {
+    background-position: center 25px;
+    background-color: #cd295c;
+  }
+  #page-content .slide-show-vip .frame li.panel-match6 div.panel-amount {
+    margin: 30px 0 0 0;
+  }
+  #page-content .slide-show-vip .frame li.panel-cash5 {
+    background-position: center 25px;
+    background-color: #fff001;
+  }
+  #page-content .slide-show-vip .frame li.panel-cash5 div.panel-amount {
+    margin: 30px 0 0 0;
+  }
+  #page-content .slide-show-vip .frame li.panel-treasurehunt {
+    background-position: center 25px;
+    background-color: #da8204;
+  }
+  #page-content .slide-show-vip .frame li.panel-treasurehunt div.panel-amount {
+    margin: 30px 0 0 0;
+  }
+}
+@media only screen and (max-width:767px) {
+  #page-content .slide-show-vip .frame li {
+    background-size: cover;
+  }
+  #page-content .slide-show-vip .frame li.panel-powerball {
+    background-size: contain;
+  }
+  #page-content .slide-show-vip .frame li.panel-megamillions {
+    background-size: contain;
+  }
+  #page-content .slide-show-vip .frame li.panel-match6 {
+    background-size: contain;
+  }
+  #page-content .slide-show-vip .frame li.panel-cash5 {
+    background-size: contain;
+  }
+  #page-content .slide-show-vip .frame li.panel-treasurehunt {
+    background-size: contain;
+  }
+  #page-content .slide-show-vip .frame li div.panel-amount {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 22px;
+    padding-right: 20px
+  }
+  #page-content .slide-show-vip .frame li div.panel-amount span {
+    font-size: 12px
+  }
+  #page-content .slide-show-vip .frame li.panel-powerball div.panel-amount {
+    margin: 40px 0 0 26px
+  }
+  #page-content .slide-show-vip .frame li.panel-powerball div.panel-ppr {
+    font-size: 11px;
+    margin: -44px 0 0 4px
+  }
+  #page-content .slide-show-vip .frame li.panel-megamillions div.panel-amount {
+    margin: 40px 0 0 20px
+  }
+  #page-content .slide-show-vip .frame li.panel-megamillions div.panel-ppr {
+    font-size: 11px;
+    margin: -44px 0 0 4px
+  }
+  #page-content .slide-show-vip .frame li.panel-match6 div.panel-amount {
+    margin: 40px 0 0 280px
+  }
+  #page-content .slide-show-vip .frame li.panel-cash5 div.panel-amount {
+    margin: 40px 0 0 280px
+  }
+  #page-content .slide-show-vip .frame li.panel-treasurehunt div.panel-amount {
+    margin: 40px 0 0 274px
+  }
+}
+
+
