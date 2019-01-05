@@ -1,8 +1,8 @@
 {
-    "title": "PA Lottery Style Guide",
+    "title": "Style Guide",
 
     "//": "these paths are relative to this file.",
-    "builder": "pa-lottery-styleguide-shell",
+    "builder": "styleguide-shell",
     "source": "src",
     "destination":  "styleguide",
 

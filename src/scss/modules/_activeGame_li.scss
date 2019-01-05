@@ -89,7 +89,7 @@
     }
 
     .second-chance {
-        @include respond(desktop){
+        @media (min-width: 1068px) {
             &:hover {
                 .hover-tooltip {
                     display: inline-block;

@@ -56,7 +56,7 @@ class KssBuilderHandlebars extends KssBuilderBaseHandlebars {
         string: true,
         multiple: false,
         describe: 'Front end style guidelines for palottery.com',
-        default: 'PA Lottery Style Guide'
+        default: 'Style Guide'
       }
     });
   }

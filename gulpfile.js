@@ -11,12 +11,12 @@ var buildKss = gulp.task('buildKss', function () {
     autoprefixer
   ];
 
-  gulp.src('./pa-lottery-styleguide-shell/kss-assets/*.scss')
+  gulp.src('./styleguide-shell/kss-assets/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(cssHandlers))
     .pipe(sourcemaps.write('/maps'))
-    .pipe(gulp.dest('./pa-lottery-styleguide-shell/kss-assets'))
+    .pipe(gulp.dest('./styleguide-shell/kss-assets'))
     .pipe(gulp.dest('./styleguide/kss-assets/'));
 });
 
@@ -35,7 +35,7 @@ var buildStyles = gulp.task('buildStyles', function () {
 
 var buildImg = gulp.task('buildImg', function() {
     gulp.src('./src/img/**/*.{gif,jpg,png,svg}')
-        .pipe(gulp.dest('./styleguide/PaLotteryWebsite/media/Page-Images/'));
+        .pipe(gulp.dest('./styleguide/neighborly/img/'));
 });
 
 var buildJS = gulp.task('buildJS', function () {
@@ -55,7 +55,7 @@ gulp.task('default', ['buildKss', 'buildStyles', 'buildJS', 'buildComp', 'buildI
     }
   });
 
-  gulp.watch('./pa-lottery-styleguide-shell/kss-assets/*.scss', ['buildKss']).on('change', browserSync.reload);
+  gulp.watch('./styleguide-shell/kss-assets/*.scss', ['buildKss']).on('change', browserSync.reload);
   gulp.watch('./src/scss/**/*.scss', ['buildStyles']).on('change', browserSync.reload);
   gulp.watch('src/img/**/**', ['buildImg']);
   gulp.watch('./src/js/**/*.js', ['buildJS']);

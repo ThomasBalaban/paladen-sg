@@ -1,6 +1,6 @@
-# PA Lottery Style Guide
+# Style Guide
 
-This repo contains the styleguide and pattern library for palottery.com. We are
+This repo contains the styleguide and pattern library for neiborly. We are
 using KSS to generate the style guide when updates are made. For more on using
 KSS, check out [KSS-node](https://github.com/kss-node/kss-node) on GitHub.
 

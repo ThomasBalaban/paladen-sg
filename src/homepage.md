@@ -1,4 +1,4 @@
-# ![PA Lottery logo](https://dev.v8.palottery.state.pa.us/App_Themes/PALotteryAll/images/logo.png) PA Lottery Style Guide
+# ![PA Lottery logo](https://dev.v8.palottery.state.pa.us/App_Themes/PALotteryAll/images/logo.png) Style Guide
 
 Front end guidelines for palottery.com
 
