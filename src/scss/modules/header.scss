@@ -1,0 +1,25 @@
+// header_
+//
+// PA Lottery Active Game List Object for the Scratch-Off Revamp
+//
+// Markup: ../components/header.hbs
+//
+// Style guide: Components.header
+
+
+header{
+    width: 100%;
+    display: flex;
+
+    div{
+        background: green;
+        width: 100%;
+        display:flex;
+        justify-content: center;
+
+        h1{
+            font-size: 50px;
+            color: white;
+        }
+    }
+}

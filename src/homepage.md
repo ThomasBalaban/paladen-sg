@@ -16,3 +16,5 @@ Front end guidelines for palottery.com
 - Clear up all p tags / h tags / list tags that should not be over specified
 - Consider global fix for clearing text styles in components
 - Improve 'BuildImg' gulp command
+
+CHANGE LATER****

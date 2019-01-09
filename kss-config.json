@@ -10,6 +10,6 @@
     "homepage": "homepage.md",
   
     "//": "The css and js paths are URLs relative to the generated style guide.",
-    "css": "styles/PALotteryAll.css",
+    "css": "styles/stylesheet.css",
     "js": "js/bundle.js"
 }
