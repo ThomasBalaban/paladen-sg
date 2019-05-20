@@ -17,4 +17,9 @@ Front end guidelines for palottery.com
 - Consider global fix for clearing text styles in components
 - Improve 'BuildImg' gulp command
 
+## Insperation
+- https://blog.hubspot.com/hs-fs/hubfs/00-Blog_Thinkstock_Images/Microsoft_Stories_Blog.png?width=671&name=Microsoft_Stories_Blog.png
+- https://blog.hubspot.com/hs-fs/hubfs/Help_Scout_Blog-2.png?width=671&name=Help_Scout_Blog-2.png
+-https://blog.hubspot.com/hs-fs/hubfs/Screen_Shot_2016-09-30_at_10.45.16_AM.png?width=671&name=Screen_Shot_2016-09-30_at_10.45.16_AM.png
+
 CHANGE LATER****
