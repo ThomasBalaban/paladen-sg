@@ -60,5 +60,6 @@ gulp.task('default', ['buildKss', 'buildStyles', 'buildJS', 'buildComp', 'buildI
   gulp.watch('src/img/**/**', ['buildImg']);
   gulp.watch('./src/js/**/*.js', ['buildJS']);
   gulp.watch('./src/components/**', ['buildComp']);
+  gulp.watch('./src/global/**', ['buildComp']);
   gulp.watch('./src/homepage.md', ['buildComp']);
 });
